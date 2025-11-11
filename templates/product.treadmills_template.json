@@ -30,8 +30,6 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify://shop_images/Sole_Deal_Days_Sale_Banner_Desktop_2025.webp",
-        "mobile_image": "shopify://shop_images/Sole_Deal_Days_Sale_Banner_Mobile_2025.webp",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
@@ -98,11 +96,6 @@
             "content": "<p>Some of our fitness equipment features wireless smartphone charging capabilities that emit a magnetic field. This magnetic field may interfere with implanted medical devices, such as pacemakers, defibrillators, or insulin pumps. If you have an implanted medical device, please consult with your doctor before using this equipment.</p>",
             "page": ""
           }
-        },
-        "4b52e639-320d-48a7-b43d-52a8bfc80fc0": {
-          "type": "shopify://apps/bazaarvoice-reviews-photos/blocks/rating-summary-block/766ed9d3-b120-48f3-8444-448f45152f47",
-          "disabled": true,
-          "settings": {}
         },
         "rating": {
           "type": "rating",
@@ -191,7 +184,6 @@
         "47c360a1-0cc7-4b9e-8a12-fd2646e06032",
         "b7e6f58c-c688-47d7-a7b1-3f9aa10f95bf",
         "collapsible_text_qTViAy",
-        "4b52e639-320d-48a7-b43d-52a8bfc80fc0",
         "rating",
         "payment_terms",
         "description",
@@ -513,16 +505,6 @@
     },
     "17478792342e88844c": {
       "type": "apps",
-      "blocks": {
-        "bazaarvoice_reviews_photos_reviews_block_TbdfYY": {
-          "type": "shopify://apps/bazaarvoice-reviews-photos/blocks/reviews-block/766ed9d3-b120-48f3-8444-448f45152f47",
-          "disabled": true,
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "bazaarvoice_reviews_photos_reviews_block_TbdfYY"
-      ],
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
@@ -657,7 +639,6 @@
         "template--20109877313839__6b8dd083-d45d-42f2-9206-dacb70b60081-item-1": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Separate_Phones_Overlapping_1.webp",
             "image_rotation_degrees": -2,
             "subheading": "",
             "title": "SOLE+ Workouts",
@@ -669,7 +650,6 @@
         "715719ca-65a8-4e22-a595-74ee2e2fe065": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Separate_Phones_Overlapping_2.webp",
             "image_rotation_degrees": 0,
             "subheading": "",
             "title": "SOLE+ INSTRUCTORS",
@@ -681,7 +661,6 @@
         "template--20109877313839__6b8dd083-d45d-42f2-9206-dacb70b60081-item-2": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Separate_Phones_Overlapping_3.webp",
             "image_rotation_degrees": 1.5,
             "subheading": "",
             "title": "SOLE+ Videos",
@@ -718,15 +697,6 @@
     },
     "1752298601f1c22073": {
       "type": "apps",
-      "blocks": {
-        "bazaarvoice_reviews_photos_reviews_block_ByWMrf": {
-          "type": "shopify://apps/bazaarvoice-reviews-photos/blocks/reviews-block/766ed9d3-b120-48f3-8444-448f45152f47",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "bazaarvoice_reviews_photos_reviews_block_ByWMrf"
-      ],
       "disabled": true,
       "settings": {
         "full_width": true,
