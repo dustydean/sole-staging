@@ -1,0 +1,178 @@
+/* ResellerRatings Custom Styling for SOLE Fitness
+   Consolidates: layout fixes, brand colors, purple UI fixes
+   Tested: Chrome DevTools MCP on preview theme
+   Date: 2025-10-06
+
+   This CSS fixes two critical issues:
+   1. Layout: Stars widget pushing price to same line
+   2. Branding: Purple UI elements instead of SOLE brand colors
+
+   Note: ResellerRatings uses CSS module class names (.RRPR_src-features-*)
+   which are different from their legacy class names (.rr-*)
+*/
+
+/* ========================================
+   CSS VARIABLES
+   ======================================== */
+:root {
+  --sole-brand-red: #B21E2D;
+  --sole-star-gold: #FFB800;
+  --sole-text-black: #1a1a1a;
+  --sole-text-gray: #666666;
+  --sole-star-empty: #D3D3D3;
+}
+
+/* ========================================
+   LAYOUT FIXES
+   ======================================== */
+
+/* Ensure ResellerRatings stars display on their own line */
+.product-info__resellerratings-stars,
+#RR_PR_Widget_Wrapper,
+#RR_PR_Summary_Wrapper,
+#RR_PR_Frame_Wrapper {
+  display: block !important;
+  width: 100% !important;
+  clear: both !important;
+}
+
+.product-info__resellerratings-stars {
+  margin: 10px 0 15px 0 !important;
+}
+
+/* Ensure price block stays on its own line */
+.product-info__block-item[data-block-type="price"] {
+  display: block !important;
+  width: 100% !important;
+  clear: both !important;
+}
+
+/* Ensure offer blocks (promo badges) after RR stars clear properly */
+.product-info__block-item[data-block-type="resellerratings-stars"] + .product-info__block-item[data-block-type="offer"] {
+  clear: both !important;
+  display: block !important;
+  width: 100% !important;
+}
+
+/* ========================================
+   CLICKABLE HOVER EFFECT
+   ======================================== */
+
+/* Make star rating clickable with subtle hover feedback */
+.product-info__resellerratings-stars {
+  cursor: pointer !important;
+  transition: opacity 0.2s ease !important;
+}
+
+.product-info__resellerratings-stars:hover {
+  opacity: 0.7 !important;
+}
+
+/* ========================================
+   STAR STYLING
+   ======================================== */
+
+/* Star fill color - SOLE red instead of purple gradient */
+.RRPR_src-features-display-stars-styles__fill {
+  background: var(--sole-brand-red) !important;
+  background-image: none !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+}
+
+/* Empty star styling */
+.RRPR_src-features-display-stars-styles__star {
+  color: var(--sole-star-empty) !important;
+  font-size: 14px !important;
+}
+
+/* ========================================
+   PROGRESS BARS & UI ELEMENTS
+   ======================================== */
+
+/* Progress bars - SOLE red instead of purple */
+.RRPR_src-features-display-progress_bar-styles__progressMeter {
+  background-color: var(--sole-brand-red) !important;
+}
+
+/* Active tab underline - SOLE red instead of purple */
+.RRPR_src-features-content_tabs-styles__selected {
+  border-bottom-color: var(--sole-brand-red) !important;
+}
+
+/* Pagination current page - SOLE red instead of purple */
+.RRPR_src-features-display-pager-styles__current {
+  background-color: var(--sole-brand-red) !important;
+  color: #ffffff !important;
+}
+
+/* ========================================
+   LINKS & INTERACTIVE ELEMENTS
+   ======================================== */
+
+/* Links - SOLE red */
+.RRPR_src-features-rating_widget-styles__links a,
+.RRPR_src-features-rating_widget-styles__links button {
+  color: var(--sole-brand-red) !important;
+}
+
+/* ========================================
+   ADDITIONAL UI FIXES
+   ======================================== */
+
+/* Hide "Questions and Answers" tab and pipe separator */
+.RRPR_src-features-rating_widget-styles__links {
+  display: none !important;
+}
+
+/* Fix purple text in circular rating graphics (Value/Quality scores) */
+.RRPR_src-features-reviews-styles__circle text,
+.RRPR_src-features-reviews-styles__circle tspan {
+  fill: var(--sole-text-black) !important;
+}
+
+/* Fix purple "Verified Purchaser" text - change to SOLE red */
+.RRPR_src-features-display-text-styles__highlight {
+  color: var(--sole-brand-red) !important;
+}
+
+/* Fix purple circular progress rings (Value/Quality graphics) */
+#gradient stop:first-child {
+  stop-color: var(--sole-brand-red) !important;
+}
+
+#gradient stop:last-child {
+  stop-color: var(--sole-brand-red) !important;
+}
+
+/* Fix purple verified purchaser checkmark icon */
+img[alt="checkmark"][src*="shopperstream_verified_check"] {
+  filter: hue-rotate(85deg) saturate(1.8) brightness(0.85) !important;
+}
+
+/* Style for rating and count display (added by JavaScript) */
+.rr-rating-count {
+  margin-left: 6px;
+  font-size: 13px;
+  color: #333;
+  font-weight: 400;
+  vertical-align: baseline;
+  display: inline-block;
+  line-height: 1;
+  position: relative;
+  top: -4px;
+}
+
+/* ========================================
+   MOBILE RESPONSIVE
+   ======================================== */
+@media (max-width: 768px) {
+  /* Layout remains the same on mobile */
+  .product-info__resellerratings-stars,
+  #RR_PR_Widget_Wrapper,
+  #RR_PR_Summary_Wrapper,
+  #RR_PR_Frame_Wrapper {
+    margin: 5px 0 !important;
+  }
+}

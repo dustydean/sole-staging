@@ -1,0 +1,113 @@
+{%- comment -%}
+  ResellerRatings Stars Only Display
+  Shows only star rating without review count or summary
+  Lightweight snippet for displaying just the star visualization
+
+  Parameters:
+  - product: Product object
+
+  Usage:
+  {%- render 'resellerratings-stars', product: product -%}
+{%- endcomment -%}
+
+{%- if settings.resellerratings_enabled -%}
+  {%- assign selected_variant = product.selected_or_first_available_variant -%}
+
+  <!-- Stars-only display wrapper using Widget wrapper -->
+  <div class="resellerratings-stars" data-product-id="{{ product.id }}" aria-label="Product star rating">
+    <div id="RR_PR_Widget_Wrapper" role="img" aria-label="{{ product.title }} star rating"></div>
+  </div>
+
+  <!-- Initialize ResellerRatings Settings if not already done -->
+  <script nonce="{{ content_for_header | split: 'nonce="' | last | split: '"' | first }}">
+    if (!window.__RRPRWidget_Settings) {
+        let variantskus = [];
+        {%- for product_variant in product.variants -%}
+          {%- if product_variant.sku != blank -%}
+            variantskus.push({
+              sku: {{ product_variant.sku | json }},
+              name: {{ product.title | json }},
+              gtin: {{ product_variant.barcode | default: '' | json }},
+              img: {{ product.featured_media.preview_image | image_url: width: 500 | json }},
+              url: {{ shop.url | append: product.url | json }},
+              parent_id: {{ product.id | json }}
+            });
+          {%- endif -%}
+        {%- endfor -%}
+
+        window.__RRPRWidget_Settings = {
+          name: {{ product.title | json }},
+          sku: {{ selected_variant.sku | default: '' | json }},
+          gtin: {{ selected_variant.barcode | default: '' | json }},
+          img: {{ product.featured_media.preview_image | image_url: width: 500 | json }},
+          url: {{ shop.url | append: product.url | json }},
+          parent_id: {{ product.id | json }},
+          products: variantskus
+        };
+
+        window.RR_WIDGET_LOADED = true;
+      }
+  </script>
+
+  <!-- Load ResellerRatings Widget Script if not already loaded -->
+  <!-- External script size: ~50KB gzipped -->
+  <script nonce="{{ content_for_header | split: 'nonce="' | last | split: '"' | first }}">
+    if (!window.RR_SCRIPT_LOADED && {{ selected_variant.sku | default: '' | json }} !== '') {
+      window.RR_SCRIPT_LOADED = true;
+      try {
+        var script = document.createElement('script');
+        script.defer = true;
+        script.src = 'https://www.resellerratings.com/productreviews/widget/app/{{ settings.resellerratings_seller_name | default: "Sole_Fitness" }}.js?sku=' + encodeURIComponent({{ selected_variant.sku | default: '' | json }});
+        script.onerror = function() {
+          console.error('Failed to load ResellerRatings widget');
+        };
+        document.head.appendChild(script);
+      } catch (error) {
+        console.error('Error initializing ResellerRatings widget:', error);
+      }
+    }
+  </script>
+
+  <!-- Add rating number and count next to stars -->
+  <script nonce="{{ content_for_header | split: 'nonce="' | last | split: '"' | first }}">
+    (function() {
+      // Wait for widget to load and render
+      var checkWidget = setInterval(function() {
+        var starDisplay = document.querySelector('#RR_PR_Widget_Wrapper .RRPR_src-features-display-stars-styles__container');
+        var bigRatingText = document.querySelector('.RRPR_src-features-reviews-styles__bigText');
+        var readAllLink = document.querySelector('#RR_PR_Widget_Wrapper button');
+
+        if (starDisplay && bigRatingText && readAllLink && !document.getElementById('rr-rating-count')) {
+          clearInterval(checkWidget);
+
+          try {
+            // Extract rating value (e.g., "4.3")
+            var ratingValue = bigRatingText.textContent.trim();
+
+            // Extract review count from link text (e.g., "Read all 194 reviews")
+            var linkText = readAllLink.textContent;
+            var countMatch = linkText.match(/(\d+)/);
+            var reviewCount = countMatch ? countMatch[1] : '0';
+
+            // Create rating/count display element
+            var ratingCountEl = document.createElement('span');
+            ratingCountEl.id = 'rr-rating-count';
+            ratingCountEl.className = 'rr-rating-count';
+            ratingCountEl.textContent = ' ' + ratingValue + ' (' + reviewCount + ')';
+            ratingCountEl.setAttribute('aria-label', ratingValue + ' out of 5 stars from ' + reviewCount + ' reviews');
+
+            // Insert after star display
+            starDisplay.insertAdjacentElement('afterend', ratingCountEl);
+          } catch (error) {
+            console.error('Error adding rating count display:', error);
+          }
+        }
+      }, 100);
+
+      // Stop checking after 10 seconds
+      setTimeout(function() {
+        clearInterval(checkWidget);
+      }, 10000);
+    })();
+  </script>
+{%- endif -%}

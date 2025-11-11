@@ -1,0 +1,821 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_overlay_LUdQGV": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_TtqREH": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Memorial Day Sale",
+            "heading_tag": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_TtqREH"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/Sole_Deal_Days_Sale_Banner_Desktop_2025.webp",
+        "mobile_image": "shopify://shop_images/Sole_Deal_Days_Sale_Banner_Mobile_2025.webp",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "resellerratings_stars_f65": {
+          "type": "resellerratings_stars",
+          "settings": {
+            "enabled": true
+          }
+        },
+        "badges": {
+          "type": "badges",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "bazaarvoice_reviews_photos_rating_summary_block_9WMUej": {
+          "type": "shopify://apps/bazaarvoice-reviews-photos/blocks/rating-summary-block/766ed9d3-b120-48f3-8444-448f45152f47",
+          "disabled": true,
+          "settings": {}
+        },
+        "47c360a1-0cc7-4b9e-8a12-fd2646e06032": {
+          "type": "offer",
+          "settings": {
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-coupon",
+            "icon_width": 24,
+            "title": "{{ product.metafields.custom.on_sale_title.value }}",
+            "content": "{{ product.metafields.custom.on_sale_badge | metafield_tag }}",
+            "background": "#d1f9e1",
+            "text_color": "#0e3952"
+          }
+        },
+        "labor_day_banner_f65": {
+          "type": "offer",
+          "settings": {
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-timer",
+            "icon_width": 28,
+            "title": "SOLE Midnight Miles: $100 Off F65 — Ends Nov 2",
+            "content": "",
+            "background": "#B21E2D",
+            "text_color": "#FFFFFF"
+          }
+        },
+        "b7e6f58c-c688-47d7-a7b1-3f9aa10f95bf": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.msrp | metafield_tag }}"
+          }
+        },
+        "collapsible_text_qTViAy": {
+          "type": "collapsible_text",
+          "disabled": true,
+          "settings": {
+            "title": "Warning: Magnetic Fields May Interfere with Implanted Medical Devices",
+            "content": "<p>Some of our fitness equipment features wireless smartphone charging capabilities that emit a magnetic field. This magnetic field may interfere with implanted medical devices, such as pacemakers, defibrillators, or insulin pumps. If you have an implanted medical device, please consult with your doctor before using this equipment.</p>",
+            "page": ""
+          }
+        },
+        "4b52e639-320d-48a7-b43d-52a8bfc80fc0": {
+          "type": "shopify://apps/bazaarvoice-reviews-photos/blocks/rating-summary-block/766ed9d3-b120-48f3-8444-448f45152f47",
+          "disabled": true,
+          "settings": {}
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "payment_terms": {
+          "type": "payment_terms",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "0dd128d0-f81e-49af-af96-ff57cb6477d8": {
+          "type": "associated_products",
+          "settings": {
+            "title": "Customers also bought:",
+            "stack_products": true,
+            "products_count": 5,
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "7f393cb4-c26c-4a98-bdd5-af941f25c9ae": {
+          "type": "offer",
+          "disabled": true,
+          "settings": {
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-mailbox",
+            "icon_width": 24,
+            "title": "Add Delivery Upgrades on the Checkout Page:",
+            "content": "<ul><li>Room of Choice - $199  </li><li>Room of Choice with Assembly - $350</li></ul>",
+            "background": "#f0f0f0",
+            "text_color": "#1a1a1a"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "text_h9dq38": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>For a more customized and personal experience, you may also order by calling: 866-780-7653</p>"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "resellerratings_stars_f65",
+        "labor_day_banner_f65",
+        "badges",
+        "price",
+        "bazaarvoice_reviews_photos_rating_summary_block_9WMUej",
+        "47c360a1-0cc7-4b9e-8a12-fd2646e06032",
+        "b7e6f58c-c688-47d7-a7b1-3f9aa10f95bf",
+        "collapsible_text_qTViAy",
+        "4b52e639-320d-48a7-b43d-52a8bfc80fc0",
+        "rating",
+        "payment_terms",
+        "description",
+        "0dd128d0-f81e-49af-af96-ff57cb6477d8",
+        "variant_picker",
+        "7f393cb4-c26c-4a98-bdd5-af941f25c9ae",
+        "quantity_selector",
+        "buy_buttons",
+        "text_h9dq38"
+      ],
+      "settings": {
+        "full_width": true,
+        "show_fixed_add_to_cart": true,
+        "desktop_media_width": 65,
+        "desktop_media_layout": "carousel_thumbnails_bottom",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "free_scroll",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "rich_text_F4JFkC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_cpBL4R": {
+          "type": "heading",
+          "settings": {
+            "text": "{{ product.metafields.custom.productdescriptionheading.value }}",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_athCyG": {
+          "type": "richtext",
+          "settings": {
+            "content": "{{ product.metafields.custom.productdescriptioncontent | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "heading_cpBL4R",
+        "richtext_athCyG"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_WzQUq8": {
+      "type": "multi-column",
+      "blocks": {
+        "item_ecXVMR": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "SOLE+ APP",
+            "heading_tag": "h4",
+            "content": "<p>All fitness equipment purchases come standard with our <strong>FREE SOLE+ App</strong> allowing you to access <strong>hundreds of FREE fitness classes</strong> and <strong>thousands of hours of exercise content</strong>.</p><p>An incredible<em><strong> FREE benefit to SOLE customers</strong></em><strong>. </strong>Saving you hundreds of dollars compared to our competitors. </p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_VVqGr7": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Delivery Upgrades",
+            "heading_tag": "h4",
+            "content": "<p>Don't forget to add Delivery Upgrades at Checkout! </p><ul><li>Room of Choice - $200</li><li>Room of Choice with Assembly - $350</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_QerjU3": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Don't forget to add a Mat",
+            "heading_tag": "h4",
+            "content": "<p>Protect your floors and equipment. The SOLE floor mat will keep carpet fibers out of your machine and prevent vibration to prolong the life of your SOLE product. Our mat is a standard black 1/4\" PVC vinyl and nitrile rubber designed for comfort and efficiency. The mat is 36.5\" x 78\" and will help to protect any surface such as tile, hardwood, stone, cement, or carpet.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_ecXVMR",
+        "item_VVqGr7",
+        "item_QerjU3"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "48e8332c-d70c-430d-852f-0d5582299ff6": {
+      "type": "rich-text",
+      "blocks": {
+        "template--20109877313839__48e8332c-d70c-430d-852f-0d5582299ff6-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "SOLE"
+          }
+        },
+        "template--20109877313839__48e8332c-d70c-430d-852f-0d5582299ff6-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "WE'LL MOVE YOU",
+            "heading_tag": "h0",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--20109877313839__48e8332c-d70c-430d-852f-0d5582299ff6-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>WE ARE SO PROUD OF YOUR DECISION TO CONSIDER ONE OF OUR BESPOKE PRODUCTS. </p><p>WE STAND BY EACH ONE OF OUR PRODUCTS WITH OUR PROMISE TO YOU THAT NO MATTER WHAT, WE WILL DO OUR BEST TO COACH YOU TO ACHIEVE YOUR FITNESS GOALS WITH THE SOLE+ APP, HELP YOU CONNECT WITH AWESOME NEW TECHNOLOGIES, AND HAVE PEACE OF MIND WITH OUR COMPREHENSIVE WARRANTY PROGRAM. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--20109877313839__48e8332c-d70c-430d-852f-0d5582299ff6-subheading-1",
+        "template--20109877313839__48e8332c-d70c-430d-852f-0d5582299ff6-heading-1",
+        "template--20109877313839__48e8332c-d70c-430d-852f-0d5582299ff6-richtext-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "68c05a59-f2fa-4b40-ba84-865009a98f52": {
+      "type": "media-with-text",
+      "blocks": {
+        "template--20109877313839__68c05a59-f2fa-4b40-ba84-865009a98f52-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom.image_for_media_with_text_on_treadmills_template.value }}",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "{{ product.metafields.custom.heading_for_media_with_text_on_treadmills_template.value }}",
+            "content": "<p>{{ product.metafields.custom.paragraph_for_media_with_text_on_treadmills_template | metafield_tag }}</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "b4a4e208-1cb9-4687-b938-6a68613126a1": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom[\"2_image_for_media_with_text_on_treadmills_template\"].value }}",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "{{ product.metafields.custom[\"2_heading_for_media_with_text_on_treadmills_template\"].value }}",
+            "content": "<p>{{ product.metafields.custom[\"2_paragraph_for_media_with_text_on_treadmills_template\"] | metafield_tag }}</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20109877313839__68c05a59-f2fa-4b40-ba84-865009a98f52-image-1",
+        "b4a4e208-1cb9-4687-b938-6a68613126a1"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "0917ac92-495d-4854-ab71-bfddb72d91a6": {
+      "type": "video",
+      "blocks": {
+        "template--20109877313839__0917ac92-495d-4854-ab71-bfddb72d91a6-play-1": {
+          "type": "play",
+          "settings": {}
+        },
+        "template--20109877313839__0917ac92-495d-4854-ab71-bfddb72d91a6-heading-1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Video",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--20109877313839__0917ac92-495d-4854-ab71-bfddb72d91a6-play-1",
+        "template--20109877313839__0917ac92-495d-4854-ab71-bfddb72d91a6-heading-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "autoplay": false,
+        "video_size": "auto",
+        "video": "{{ product.metafields.custom.video_on_product_page.value }}",
+        "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "5c4d0a07-ab08-4ac1-b10b-bc25cd74f6a7": {
+      "type": "accordion-content",
+      "blocks": {
+        "template--20109877313839__5c4d0a07-ab08-4ac1-b10b-bc25cd74f6a7-item-1": {
+          "type": "item",
+          "settings": {
+            "title": "Controls & Features",
+            "content": "{{ product.metafields.custom.controls_features_content2 | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "template--20109877313839__5c4d0a07-ab08-4ac1-b10b-bc25cd74f6a7-item-2": {
+          "type": "item",
+          "settings": {
+            "title": "Machine Dimensions",
+            "content": "{{ product.metafields.custom.machine_dimensions_content2 | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "template--20109877313839__5c4d0a07-ab08-4ac1-b10b-bc25cd74f6a7-item-3": {
+          "type": "item",
+          "settings": {
+            "title": "Warranty",
+            "content": "{{ product.metafields.custom.warranty_content_test | metafield_tag }}<p></p>",
+            "page": ""
+          }
+        },
+        "item_VNHjNm": {
+          "type": "item",
+          "settings": {
+            "title": "Magnetic Fields May Interfere with Implanted Medical Devices",
+            "content": "<p>Some of our fitness equipment features wireless smartphone charging capabilities that emit a magnetic field. This magnetic field may interfere with implanted medical devices, such as pacemakers, defibrillators, or insulin pumps. If you have an implanted medical device, please consult with your doctor before using this equipment.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20109877313839__5c4d0a07-ab08-4ac1-b10b-bc25cd74f6a7-item-1",
+        "template--20109877313839__5c4d0a07-ab08-4ac1-b10b-bc25cd74f6a7-item-2",
+        "template--20109877313839__5c4d0a07-ab08-4ac1-b10b-bc25cd74f6a7-item-3",
+        "item_VNHjNm"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Product Specifications",
+        "content": "<p>Please click on the following titles to find our the details of each important product specification. If there is anything else you would like to know, do not hesitate to contact us.   </p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "17478792342e88844c": {
+      "type": "apps",
+      "blocks": {
+        "bazaarvoice_reviews_photos_reviews_block_TbdfYY": {
+          "type": "shopify://apps/bazaarvoice-reviews-photos/blocks/reviews-block/766ed9d3-b120-48f3-8444-448f45152f47",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "bazaarvoice_reviews_photos_reviews_block_TbdfYY"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "470f856e-d208-4005-abc7-24d6d07b6843": {
+      "type": "media-grid",
+      "blocks": {
+        "template--20109877313839__470f856e-d208-4005-abc7-24d6d07b6843-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom.media_grid_image_1.value }}",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 40
+          }
+        },
+        "template--20109877313839__470f856e-d208-4005-abc7-24d6d07b6843-image-2": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom.media_grid_image_3.value }}",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 40
+          }
+        },
+        "template--20109877313839__470f856e-d208-4005-abc7-24d6d07b6843-image-3": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom.media_grid_image_2.value }}",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 40
+          }
+        }
+      },
+      "block_order": [
+        "template--20109877313839__470f856e-d208-4005-abc7-24d6d07b6843-image-1",
+        "template--20109877313839__470f856e-d208-4005-abc7-24d6d07b6843-image-2",
+        "template--20109877313839__470f856e-d208-4005-abc7-24d6d07b6843-image-3"
+      ],
+      "settings": {
+        "full_width": true,
+        "reduce_width": false,
+        "desktop_row_height": 290,
+        "mobile_row_height": 150,
+        "background": "",
+        "background_gradient": ""
+      }
+    },
+    "98a24fb9-0575-4cf8-9639-4d765b8bcd54": {
+      "type": "impact-text",
+      "blocks": {
+        "template--20109877313839__98a24fb9-0575-4cf8-9639-4d765b8bcd54-item-1": {
+          "type": "item",
+          "settings": {
+            "title": "Unlock your full exercise potential with our FREE Sole+ Application!",
+            "subheading": "Each one of our fitness products comes standard with hundreds of FREE Fitness Video Classes covering basic to advanced routines!",
+            "content": "<p>Our FREE videos maximize your training routines with help from our professional fitness trainers!</p>",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 2
+          }
+        }
+      },
+      "block_order": [
+        "template--20109877313839__98a24fb9-0575-4cf8-9639-4d765b8bcd54-item-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "circle",
+        "impact_text_size_ratio": 0.5,
+        "background": "",
+        "background_gradient": "",
+        "heading_text_color": "",
+        "heading_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "6b8dd083-d45d-42f2-9206-dacb70b60081": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "template--20109877313839__6b8dd083-d45d-42f2-9206-dacb70b60081-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Separate_Phones_Overlapping_1.webp",
+            "image_rotation_degrees": -2,
+            "subheading": "",
+            "title": "SOLE+ Workouts",
+            "content": "<p>WORKOUTS FOR ALL SOLE EQUIPMENT WITH HUNDREDS OF WORKOUTS </p><p>Our workouts are made for all levels and range from 10 minutes to 60 minutes.  We utilize heart rate metrics and data from your equipment across all of our workouts to help you work out smarter.</p>",
+            "button_url": "shopify://pages/sole",
+            "button_text": "Learn More About SOLE+"
+          }
+        },
+        "715719ca-65a8-4e22-a595-74ee2e2fe065": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Separate_Phones_Overlapping_2.webp",
+            "image_rotation_degrees": 0,
+            "subheading": "",
+            "title": "SOLE+ INSTRUCTORS",
+            "content": "<p>QUALIFIED INSTRUCTORS ARE IN YOUR REACH</p><p>Train with the world’s best instructors from the country’s top fitness studios. Our instructors will motivate and push you to your next personal best in running, cycling, boxing, rowing, and more.</p>",
+            "button_url": "shopify://pages/sole",
+            "button_text": "Learn More About SOLE+"
+          }
+        },
+        "template--20109877313839__6b8dd083-d45d-42f2-9206-dacb70b60081-item-2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Separate_Phones_Overlapping_3.webp",
+            "image_rotation_degrees": 1.5,
+            "subheading": "",
+            "title": "SOLE+ Videos",
+            "content": "<p>You will never run into a dull moment. The videos on our SOLE+ app are engaging and encouraging to help you reach any fitness goal you have! </p>",
+            "button_url": "shopify://pages/sole",
+            "button_text": "Learn More About SOLE+"
+          }
+        }
+      },
+      "block_order": [
+        "template--20109877313839__6b8dd083-d45d-42f2-9206-dacb70b60081-item-1",
+        "715719ca-65a8-4e22-a595-74ee2e2fe065",
+        "template--20109877313839__6b8dd083-d45d-42f2-9206-dacb70b60081-item-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "images_layout": "collage",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "resellerratings_reviews_section_f65": {
+      "type": "resellerratings-reviews-section",
+      "settings": {
+        "heading": "Customer Reviews",
+        "subheading": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1752298601f1c22073": {
+      "type": "apps",
+      "blocks": {
+        "bazaarvoice_reviews_photos_reviews_block_ByWMrf": {
+          "type": "shopify://apps/bazaarvoice-reviews-photos/blocks/reviews-block/766ed9d3-b120-48f3-8444-448f45152f47",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "bazaarvoice_reviews_photos_reviews_block_ByWMrf"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "22ea6bd5-2a29-40c9-a9e3-676057405fd2": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21134244938031__22ea6bd5-2a29-40c9-a9e3-676057405fd2-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>The phrase \"Continuous Horsepower\" (CHP) is a standard reference in the treadmill market, primarily used to aid consumers in making comparisons. This CHP rating is ascertained via lab-based dynamometer tests, which evaluate the mechanical prowess of the motor. It's important to note, however, that the CHP rating is not reflective of the treadmill's working horsepower in a regular home setting. In everyday domestic use, the motor's horsepower doesn't correspond to the CHP value displayed.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21134244938031__22ea6bd5-2a29-40c9-a9e3-676057405fd2-richtext-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "#afaaaa"
+      }
+    },
+    "e737ea06-0c5a-45d4-b1ce-e33c2c6dfd55": {
+      "type": "related-products",
+      "settings": {
+        "recommendations_count": 5,
+        "products": [],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "Other Products of Interest",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "custom_liquid_f65": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div id=\"RR_PR_Widget_Wrapper\"></div>\n{% assign variant = product.first_available_variant %}\n<script>\n  let variantskus = [];\n  {% for product_variant in product.variants %}\n  variantskus.push({\n    sku: \"{{ product_variant.sku }}\", // using variant ID instead of SKU\n    name: \"{{ product.title }}\",\n    gtin: \"{{ product_variant.barcode }}\",\n    img: \"{{ product.featured_media.preview_image | image_url: width: 500 }}\",\n    url: \"https://soletreadmills.com{{ product.url }}\",\n    parent_id: \"{{ product.id }}\" // using product ID\n  });\n  {% endfor %}\n\n  var __RRPRWidget_Settings = {\n    name: \"{{ product.title }}\",\n    sku: \"{{ variant.sku }}\", // using variant ID instead of SKU\n    gtin: \"{{ variant.barcode }}\",\n    img: \"{{ product.featured_media.preview_image | image_url: width: 500 }}\",\n    url: \"https://soletreadmills.com{{ product.url }}\",\n    parent_id: \"{{ product.id }}\", // using product ID\n    products: variantskus\n  };\n</script>\n\n<!--Bottom of your page-->\n<script defer src=\"https://www.resellerratings.com/productreviews/widget/app/Sole_Fitness.js?sku={{ variant.sku }}\"></script>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_LUdQGV",
+    "main",
+    "rich_text_F4JFkC",
+    "multi_column_WzQUq8",
+    "48e8332c-d70c-430d-852f-0d5582299ff6",
+    "68c05a59-f2fa-4b40-ba84-865009a98f52",
+    "0917ac92-495d-4854-ab71-bfddb72d91a6",
+    "5c4d0a07-ab08-4ac1-b10b-bc25cd74f6a7",
+    "17478792342e88844c",
+    "470f856e-d208-4005-abc7-24d6d07b6843",
+    "98a24fb9-0575-4cf8-9639-4d765b8bcd54",
+    "6b8dd083-d45d-42f2-9206-dacb70b60081",
+    "resellerratings_reviews_section_f65",
+    "1752298601f1c22073",
+    "22ea6bd5-2a29-40c9-a9e3-676057405fd2",
+    "e737ea06-0c5a-45d4-b1ce-e33c2c6dfd55",
+    "custom_liquid_f65"
+  ]
+}

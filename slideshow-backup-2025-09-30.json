@@ -1,0 +1,154 @@
+{
+  "backup_date": "2025-09-30",
+  "backup_purpose": "Complete backup of homepage slideshow configurations",
+  "theme_branch": "promo/BTCD-Sole-Deal-Days-B-9-29",
+  "slideshow_settings": {
+    "full_width": false,
+    "allow_transparent_header": false,
+    "show_initial_transition": false,
+    "image_size": "auto",
+    "controls_type": "none",
+    "transition_type": "fade_with_text",
+    "autoplay": true,
+    "cycle_speed": 8,
+    "background": "#f2f2f2",
+    "background_gradient": "linear-gradient(60deg, rgba(NaN, NaN, NaN, 0), rgba(23, 29, 33, 1) 98%)"
+  },
+  "slides": {
+    "slide_1_image_9QJ9BM": {
+      "position": 1,
+      "name": "F80 Deal Days Promo",
+      "type": "image",
+      "settings": {
+        "image": "shopify://shop_images/Sole_DealDays2025_F80_HomepageSlider_Desktop.jpg",
+        "mobile_image": "shopify://shop_images/Sole_DealDays2025_F80_HomepageSlider_Mobile.jpg",
+        "content_max_width": 780,
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "subheading": "",
+        "title": "",
+        "heading_tag": "h0",
+        "button_text": "",
+        "button_link": "shopify://products/sole-f80",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "background": "",
+        "background_gradient": ""
+      }
+    },
+    "slide_2_image_qq3xG9": {
+      "position": 2,
+      "name": "F65 Deal Days Promo",
+      "type": "image",
+      "settings": {
+        "image": "shopify://shop_images/Sole_DealDays2025_F65_HomepageSlider_Desktop.jpg",
+        "mobile_image": "shopify://shop_images/Sole_DealDays2025_F65_HomepageSlider_Mobile.jpg",
+        "content_max_width": 780,
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "subheading": "",
+        "title": "",
+        "heading_tag": "h0",
+        "button_text": "",
+        "button_link": "shopify://products/sole-f65",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "background": "",
+        "background_gradient": ""
+      }
+    },
+    "slide_3_image_Gm6Ded": {
+      "position": 3,
+      "name": "Treadmills General",
+      "type": "image",
+      "settings": {
+        "image": "shopify://shop_images/March_banner_no_sale_d.webp",
+        "mobile_image": "shopify://shop_images/March_banner_no_sale_m.webp",
+        "content_max_width": 780,
+        "mobile_text_position": "place-self-end-center text-center",
+        "desktop_text_position": "sm:place-self-end-center sm:text-center",
+        "subheading": "",
+        "title": "Designed to Keep You Moving",
+        "heading_tag": "h2",
+        "button_text": "Shop Treadmills",
+        "button_link": "shopify://collections/treadmills",
+        "text_color": "#ffffff",
+        "button_background": "#9a192e",
+        "button_text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "background": "",
+        "background_gradient": ""
+      }
+    },
+    "slide_4_6fb34f53": {
+      "position": 4,
+      "name": "SRVO All-in-One Trainer",
+      "type": "image",
+      "settings": {
+        "image": "shopify://shop_images/hero_SRVO.webp",
+        "mobile_image": "shopify://shop_images/SRVO_mobile.webp",
+        "content_max_width": 780,
+        "mobile_text_position": "place-self-center-start text-start",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "subheading": "Completely Redesigned APP!",
+        "title": "SRVO ALL-IN-ONE TRAINER",
+        "heading_tag": "h2",
+        "button_text": "EXPLORE SRVO",
+        "button_link": "shopify://pages/srvo",
+        "text_color": "#ffffff",
+        "button_background": "#9a192e",
+        "button_text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "background": "",
+        "background_gradient": ""
+      }
+    },
+    "slide_5_slide-1": {
+      "position": 5,
+      "name": "SOLE+ App Promotion",
+      "type": "image",
+      "settings": {
+        "image": "shopify://shop_images/Free_Classes_SOLE_Plus_6570bdf1-9394-4df6-9d2f-bf98ccc878ee.webp",
+        "mobile_image": "shopify://shop_images/Sole_plus_mobile.webp",
+        "content_max_width": 780,
+        "mobile_text_position": "place-self-center-start text-start",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "subheading": "FREE CONTENT TO KEEP YOU MOTIVATED AND EXCITED TO GET IN SHAPE. NO SUBSCRIPTION REQUIRED.",
+        "title": "WITH OUR FREE SOLE+ APP YOU CAN ACCESS THOUSANDS OF WORKOUT CLASSES WITH EVERY PURCHASE",
+        "heading_tag": "h2",
+        "button_text": "SEE THE BENEFITS",
+        "button_link": "shopify://pages/sole",
+        "text_color": "#ffffff",
+        "button_background": "#9a192e",
+        "button_text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "background": "",
+        "background_gradient": ""
+      }
+    }
+  },
+  "block_order": [
+    "image_9QJ9BM",
+    "image_qq3xG9",
+    "image_Gm6Ded",
+    "6fb34f53-b201-4cb2-ab97-03481b624ab4",
+    "slide-1"
+  ],
+  "notes": [
+    "Maximum slides per slideshow: 5",
+    "To restore a slide, copy its settings from this file",
+    "Image paths use Shopify's CDN format (shopify://shop_images/)",
+    "Product links use format: shopify://products/[handle]",
+    "Collection links use format: shopify://collections/[handle]",
+    "Page links use format: shopify://pages/[handle]"
+  ]
+}

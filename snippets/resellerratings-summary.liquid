@@ -1,0 +1,68 @@
+{%- comment -%}
+  ResellerRatings Summary Display
+  Shows star rating and review count in product info area
+  Replaces BazaarVoice rating summary block
+  
+  Parameters:
+  - product: Product object
+  - show_rating: Boolean to show/hide star rating
+  - show_count: Boolean to show/hide review count
+{%- endcomment -%}
+
+{%- if settings.resellerratings_enabled -%}
+  {%- assign selected_variant = product.selected_or_first_available_variant -%}
+  
+  <div class="resellerratings-summary" data-product-id="{{ product.id }}" aria-label="Product review summary">
+    <div id="RR_PR_Summary_Wrapper" role="region" aria-label="{{ product.title }} review summary"></div>
+  </div>
+
+  <!-- Initialize ResellerRatings Settings Once -->
+  <script nonce="{{ content_for_header | split: 'nonce="' | last | split: '"' | first }}">
+    if (!window.__RRPRWidget_Settings) {
+        let variantskus = [];
+        {%- for product_variant in product.variants -%}
+          {%- if product_variant.sku != blank -%}
+            variantskus.push({
+              sku: {{ product_variant.sku | json }},
+              name: {{ product.title | json }},
+              gtin: {{ product_variant.barcode | default: '' | json }},
+              img: {{ product.featured_media.preview_image | image_url: width: 500 | json }},
+              url: {{ shop.url | append: product.url | json }},
+              parent_id: {{ product.id | json }}
+            });
+          {%- endif -%}
+        {%- endfor -%}
+        
+        window.__RRPRWidget_Settings = {
+          name: {{ product.title | json }},
+          sku: {{ selected_variant.sku | default: '' | json }},
+          gtin: {{ selected_variant.barcode | default: '' | json }},
+          img: {{ product.featured_media.preview_image | image_url: width: 500 | json }},
+          url: {{ shop.url | append: product.url | json }},
+          parent_id: {{ product.id | json }},
+          products: variantskus
+        };
+        
+        window.RR_WIDGET_LOADED = true;
+      }
+  </script>
+  
+  <!-- Load ResellerRatings Widget Script Once -->
+  <!-- External script size: ~50KB gzipped -->
+  <script nonce="{{ content_for_header | split: 'nonce="' | last | split: '"' | first }}">
+    if (!window.RR_SCRIPT_LOADED && {{ selected_variant.sku | default: '' | json }} !== '') {
+      window.RR_SCRIPT_LOADED = true;
+      try {
+        var script = document.createElement('script');
+        script.defer = true;
+        script.src = 'https://www.resellerratings.com/productreviews/widget/app/{{ settings.resellerratings_seller_name | default: "Sole_Fitness" }}.js?sku=' + encodeURIComponent({{ selected_variant.sku | default: '' | json }});
+        script.onerror = function() {
+          console.error('Failed to load ResellerRatings widget');
+        };
+        document.head.appendChild(script);
+      } catch (error) {
+        console.error('Error initializing ResellerRatings widget:', error);
+      }
+    }
+  </script>
+{%- endif -%}

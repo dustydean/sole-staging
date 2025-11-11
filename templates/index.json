@@ -1,0 +1,1018 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_overlay_GCQeMn": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/Sale_Banner_Desktop_2025_Get_Ready_for_S.webp",
+        "mobile_image": "shopify://shop_images/Sale_Banner_Mobile_2025_Get_Ready_for_S.webp",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "image_jhjeKQ": {
+          "type": "image",
+          "name": "F85",
+          "settings": {
+            "image": "shopify://shop_images/F85_Homeapge_Banner_Desktop.webp",
+            "mobile_image": "shopify://shop_images/F85_Homeapge_Banner_Mobile.webp",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "shopify://products/sole-f85",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "image_Gaicjf": {
+          "type": "image",
+          "name": "F80",
+          "settings": {
+            "image": "shopify://shop_images/F80_Homeapge_Banner_Desktop.webp",
+            "mobile_image": "shopify://shop_images/F80_Homeapge_Banner_Mobile.webp",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "shopify://products/sole-f80",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "image_9QJ9BM": {
+          "type": "image",
+          "name": "F63",
+          "settings": {
+            "image": "shopify://shop_images/F63_Homeapge_Banner_Desktop.webp",
+            "mobile_image": "shopify://shop_images/F63_Homeapge_Banner_Mobile.webp",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "shopify://products/sole-f63",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "image_wFEziw": {
+          "type": "image",
+          "name": "E95",
+          "settings": {
+            "image": "shopify://shop_images/E95_Homeapge_Banner_Desktop.webp",
+            "mobile_image": "shopify://shop_images/E95_Homeapge_Banner_Mobile.webp",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "shopify://products/sole-e95",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "image_jRKqLG": {
+          "type": "image",
+          "name": "E35",
+          "settings": {
+            "image": "shopify://shop_images/E35_Homeapge_Banner_Desktop.webp",
+            "mobile_image": "shopify://shop_images/E35_Homeapge_Banner_Mobile.webp",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "shopify://products/sole-e35",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_jhjeKQ",
+        "image_Gaicjf",
+        "image_9QJ9BM",
+        "image_wFEziw",
+        "image_jRKqLG"
+      ],
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "show_initial_transition": false,
+        "image_size": "auto",
+        "controls_type": "none",
+        "transition_type": "fade_with_text",
+        "autoplay": true,
+        "cycle_speed": 8,
+        "background": "#f2f2f2",
+        "background_gradient": "linear-gradient(60deg, rgba(NaN, NaN, NaN, 0), rgba(23, 29, 33, 1) 98%)"
+      }
+    },
+    "f05a495c-2b69-4b3c-af0b-cdf908bafa27": {
+      "type": "collection-list",
+      "blocks": {
+        "template--19107506946351__f05a495c-2b69-4b3c-af0b-cdf908bafa27-168909271870fbe36d-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "treadmills",
+            "image": "shopify://shop_images/F89.webp",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h4",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 10
+          }
+        },
+        "template--19107506946351__f05a495c-2b69-4b3c-af0b-cdf908bafa27-168909271870fbe36d-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "ellipticals",
+            "image": "shopify://shop_images/22_P1027461.webp",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h4",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 10
+          }
+        },
+        "template--19107506946351__f05a495c-2b69-4b3c-af0b-cdf908bafa27-168909271870fbe36d-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "bikes",
+            "image": "shopify://shop_images/SB900_41_P1040202.jpg",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h4",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 10
+          }
+        },
+        "d90e359a-0760-4ac6-ab10-7304d045925c": {
+          "type": "collection",
+          "settings": {
+            "collection": "strength",
+            "image": "shopify://shop_images/2F9A4605copy.webp",
+            "subheading": "",
+            "title": "",
+            "url": "shopify://pages/closeout",
+            "heading_tag": "h4",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 10
+          }
+        },
+        "fcb0105e-213b-4991-a588-7df6048aee01": {
+          "type": "collection",
+          "settings": {
+            "collection": "srvo",
+            "image": "shopify://shop_images/SRVO_Lifestyle.webp",
+            "subheading": "",
+            "title": "",
+            "url": "shopify://pages/srvo",
+            "heading_tag": "h4",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 10
+          }
+        },
+        "c9613e10-737a-420b-b7e0-d17e532f94ac": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/SR550_66_P1051991_SOLE_SR550.webp",
+            "subheading": "",
+            "title": "Rower",
+            "url": "shopify://products/sole-sr550",
+            "heading_tag": "h4",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "template--19107506946351__f05a495c-2b69-4b3c-af0b-cdf908bafa27-168909271870fbe36d-2",
+        "template--19107506946351__f05a495c-2b69-4b3c-af0b-cdf908bafa27-168909271870fbe36d-0",
+        "template--19107506946351__f05a495c-2b69-4b3c-af0b-cdf908bafa27-168909271870fbe36d-1",
+        "d90e359a-0760-4ac6-ab10-7304d045925c",
+        "fcb0105e-213b-4991-a588-7df6048aee01",
+        "c9613e10-737a-420b-b7e0-d17e532f94ac"
+      ],
+      "settings": {
+        "full_width": false,
+        "stack_collections": true,
+        "collections_per_row_mobile": "2",
+        "collections_per_row": 3,
+        "show_progress_bar": true,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "rich_text_TVAmKU": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_gnhQbH": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h5>Proud Exclusive Partner of Dick’s Sporting Goods</h5>"
+          }
+        },
+        "image_HFQk9i": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DICKS_2023_New.webp",
+            "width_mode": "custom",
+            "max_width": 200,
+            "mobile_max_width": 200
+          }
+        },
+        "divider_DNe4tW": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {}
+        },
+        "subheading_CEgU3Y": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_FM6Nw8": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Heading",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "richtext_gnhQbH",
+        "image_HFQk9i",
+        "divider_DNe4tW",
+        "subheading_CEgU3Y",
+        "heading_FM6Nw8"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "press": {
+      "type": "press",
+      "blocks": {
+        "quote_VKn9dQ": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/LogoB_R.svg",
+            "logo_width": 100,
+            "author": "Dewayne Chandler",
+            "content": "Great stationary recumbent bike.... Thanks for great product and generous support and personal communication. TY 😃",
+            "show_rating": true,
+            "rating": 5
+          }
+        },
+        "16644243327ba53d2a-0": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/LogoB_R.svg",
+            "logo_width": 100,
+            "author": "Daniel Dearden",
+            "content": "we love this F85 Sole Treadmill so far. it is solid and feels just like an upper end commercial unit that you would find in a quality gym setting.",
+            "show_rating": true,
+            "rating": 5
+          }
+        },
+        "quote_qEbqLW": {
+          "type": "quote",
+          "disabled": true,
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "Write some content about what they says about your store.",
+            "show_rating": true,
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "quote_VKn9dQ",
+        "16644243327ba53d2a-0",
+        "quote_qEbqLW"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_size": "large",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "featured_collection_FG8ARL": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "",
+        "products": [
+          "sole-f63",
+          "sole-f80",
+          "sole-r92",
+          "sole-e25"
+        ],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "Best Sellers",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "featured_product_ppYTrU": {
+      "type": "featured-product",
+      "blocks": {
+        "vendor_bcxLeF": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "title_fQQyHR": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "badges_B6ByRL": {
+          "type": "badges",
+          "settings": {}
+        },
+        "price_eTNRin": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating_LJejMq": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "separator_cEdCzt": {
+          "type": "separator",
+          "disabled": true,
+          "settings": {}
+        },
+        "description_bJAreh": {
+          "type": "description",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "collapse_content": true
+          }
+        },
+        "variant_picker_74n7rM": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_DUMHTF": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons_cMrK7Y": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "pickup_availability_mp8NNM": {
+          "type": "pickup_availability",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor_bcxLeF",
+        "title_fQQyHR",
+        "badges_B6ByRL",
+        "price_eTNRin",
+        "rating_LJejMq",
+        "separator_cEdCzt",
+        "description_bJAreh",
+        "variant_picker_74n7rM",
+        "quantity_selector_DUMHTF",
+        "buy_buttons_cMrK7Y",
+        "pickup_availability_mp8NNM"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "product": "sole-f80",
+        "desktop_media_width": 35,
+        "desktop_media_layout": "carousel_thumbnails_bottom",
+        "mobile_media_size": "contained",
+        "mobile_carousel_control": "free_scroll",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "rich_text_4ixWeE": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_TC9AtM": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h5>Purchase SOLE fitness equipment with pre-tax HSA/FSA dollars using Truemed at checkout. <a href=\"/pages/truemed-shop-with-hsa-fsa-funds\" title=\"Truemed - Shop with HSA-FSA Funds\">Learn more here.</a></h5>"
+          }
+        },
+        "divider_8GKAtd": {
+          "type": "divider",
+          "settings": {}
+        },
+        "image_3mfGi6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TrueMed_Logo.webp",
+            "width_mode": "custom",
+            "max_width": 180,
+            "mobile_max_width": 180
+          }
+        }
+      },
+      "block_order": [
+        "richtext_TC9AtM",
+        "divider_8GKAtd",
+        "image_3mfGi6"
+      ],
+      "settings": {
+        "full_width": false,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multiple_images_with_text_tmBhbp": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_bxHttx": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Phones.webp",
+            "image_rotation_degrees": 0,
+            "subheading": "",
+            "title": "Unlock your full exercise potential with our Free Sole+ Application",
+            "content": "<h5>Each one of our fitness products comes standard with hundreds of Free Fitness Video Classes covering basic to advanced routines!</h5><p>Our workouts are made for all levels and range from 10 minutes to 60 minutes. We utilize heart rate metrics and data from your equipment across all of our workouts to help you work out smarter.</p><p>Train with the world’s best instructors from the country’s top fitness studios. Our instructors will motivate and push you to your next personal best in running, cycling, boxing, rowing, and more.</p><p>You will never run into a dull moment. The videos on our SOLE+ app are engaging and encouraging to help you reach any fitness goal you have!</p>",
+            "button_url": "shopify://pages/sole",
+            "button_text": "Learn More About SOLE+"
+          }
+        }
+      },
+      "block_order": [
+        "item_bxHttx"
+      ],
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "logo_list_MHftLM": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_7RMj8k": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/AppleAppstoreIcon.png",
+            "logo_width": 50,
+            "link": "https://apps.apple.com/us/app/sole/id1531545488"
+          }
+        },
+        "logo_LyLgjF": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/GooglePlayStoreIcon.png",
+            "logo_width": 50,
+            "link": "https://play.google.com/store/apps/details?id=com.soletreadmills.sole_v2"
+          }
+        }
+      },
+      "block_order": [
+        "logo_7RMj8k",
+        "logo_LyLgjF"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "title": "Download the SOLE+ App",
+        "content": "",
+        "text_alignment": "center",
+        "items_per_row": 5,
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "9e9897d3-42ac-4bcd-8f75-0b155c430f05": {
+      "type": "video",
+      "blocks": {
+        "template--19107506946351__9e9897d3-42ac-4bcd-8f75-0b155c430f05-play-1": {
+          "type": "play",
+          "settings": {}
+        },
+        "template--19107506946351__9e9897d3-42ac-4bcd-8f75-0b155c430f05-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--19107506946351__9e9897d3-42ac-4bcd-8f75-0b155c430f05-play-1",
+        "template--19107506946351__9e9897d3-42ac-4bcd-8f75-0b155c430f05-heading-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "auto",
+        "external_video_url": "https://www.youtube.com/watch?v=XS2H4b5KZ4U",
+        "poster": "shopify://shop_images/Screenshot_2023-11-30_at_11.16.42_PM_Large_61b5297d-823e-4260-94a4-cb3e6f822eec.jpg",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "press_mpcawf": {
+      "type": "press",
+      "blocks": {
+        "quote_TdqmT6": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "Kristen Nelson - Contributor for Treadmill Review Guru",
+            "content": "The Sole Fitness F63 treadmill is currently the most affordable treadmill that Sole Fitness has available. However, its affordable pricing doesn't mean that you should disregard the F63. On the contrary, the Sole F63 is an excellent treadmill for walkers and joggers.",
+            "show_rating": true,
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "quote_TdqmT6"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_size": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "a23925b9-73db-4577-9ff8-de4c4e35b737": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19107506946351__a23925b9-73db-4577-9ff8-de4c4e35b737-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "SOLE"
+          }
+        },
+        "template--19107506946351__a23925b9-73db-4577-9ff8-de4c4e35b737-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "About the Company",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--19107506946351__a23925b9-73db-4577-9ff8-de4c4e35b737-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>The vision at SOLE has always been to design, manufacture, and distribute fitness equipment that not only delights, but offers cutting-edge durability and performance you can depend on, no matter your fitness level. Originally, our equipment was engineered for hotel use and despite our evolution into the home market,  we have held on to the core belief of exceptional quality. Whether you want to ditch your gym membership for home fitness, or start a small gym of your own, SOLE has an equipment line to make any fitness space complete. Over the years, we have been honored to receive many accolades for \"Best Buy,\" \"Best Overall Treadmill,\" and \"Exceptional Customer Service.\"</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19107506946351__a23925b9-73db-4577-9ff8-de4c4e35b737-subheading-1",
+        "template--19107506946351__a23925b9-73db-4577-9ff8-de4c4e35b737-heading-1",
+        "template--19107506946351__a23925b9-73db-4577-9ff8-de4c4e35b737-richtext-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "logo_list_CDYYHG": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_Ar4RfE": {
+          "type": "logo",
+          "disabled": true,
+          "settings": {
+            "logo": "shopify://shop_images/Dicks_10e4ecfa-01a9-4fff-b7aa-b25728b76571.webp",
+            "logo_width": 300,
+            "link": "#"
+          }
+        },
+        "logo_pVDt3a": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/GOLD_PARTNER_SOLE.webp",
+            "logo_width": 300,
+            "link": ""
+          }
+        },
+        "logo_UEc46n": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Review_Guru.webp",
+            "logo_width": 300,
+            "link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "logo_Ar4RfE",
+        "logo_pVDt3a",
+        "logo_UEc46n"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "title": "",
+        "content": "",
+        "text_alignment": "center",
+        "items_per_row": 5,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "17ef6988-95ef-4c79-b9eb-733ca789a7a4": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--21134244282671__17ef6988-95ef-4c79-b9eb-733ca789a7a4-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "The SOLE Experience"
+          }
+        },
+        "template--21134244282671__17ef6988-95ef-4c79-b9eb-733ca789a7a4-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Enjoy Complimentary Curbside Shipping with Every* SOLE Order!",
+            "heading_tag": "h1"
+          }
+        },
+        "template--21134244282671__17ef6988-95ef-4c79-b9eb-733ca789a7a4-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Never worry about having to pay for shipping with SOLE. All our products ship for FREE with our Curbside Delivery option.  <em>Restrictions Apply. See the Shipping Policies page. </em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21134244282671__17ef6988-95ef-4c79-b9eb-733ca789a7a4-subheading-1",
+        "template--21134244282671__17ef6988-95ef-4c79-b9eb-733ca789a7a4-heading-1",
+        "template--21134244282671__17ef6988-95ef-4c79-b9eb-733ca789a7a4-richtext-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": true,
+        "image_size": "sm",
+        "image": "shopify://shop_images/Shipping.webp",
+        "mobile_text_position": "place-self-center-start text-start",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#1a1a1a",
+        "overlay_opacity": 50
+      }
+    },
+    "7ae7a07e-6f47-4431-8014-92e30cc2ca27": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--19107506946351__7ae7a07e-6f47-4431-8014-92e30cc2ca27-item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-award-gift",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Our Guarantee",
+            "content": "<p>We at SOLE understand that buying large heavy items online can be unnerving. To help alleviate any concerns and give you 100% confidence that we make the best exercise equipment available, SOLE offers an unprecedented 30-day trial period on all of our equipment. If you are not completely satisfied with your product, we will refund your purchase, no questions asked.</p>"
+          }
+        },
+        "template--19107506946351__7ae7a07e-6f47-4431-8014-92e30cc2ca27-item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-shield",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Our Warranty",
+            "content": "<p>When you purchase exercise equipment from SOLE, you are doing more than just buying a product. You are making an investment in your future self. Buying exercise equipment for the home is a commitment to improve your life. You need a machine that will match your commitment and be with you for the long haul.</p>"
+          }
+        },
+        "template--19107506946351__7ae7a07e-6f47-4431-8014-92e30cc2ca27-item-3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-love",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Our Standard",
+            "content": "<p>SOLE is always looking for ways to make our equipment better, more efficient, and of higher quality, while still maintaining a fair price. SOLE will never compromise our integrity to improve the bottom line, no exceptions. This mentality and idealism are a requirement for employment with SOLE Fitness. From the heads of research and development, to the sales and customer support staff, we pride ourselves on having capable, reliable people working for us.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19107506946351__7ae7a07e-6f47-4431-8014-92e30cc2ca27-item-1",
+        "template--19107506946351__7ae7a07e-6f47-4431-8014-92e30cc2ca27-item-2",
+        "template--19107506946351__7ae7a07e-6f47-4431-8014-92e30cc2ca27-item-3"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "title": "",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "c9efeb28-756e-45c4-beca-a9177e97ab53": {
+      "type": "blog-posts",
+      "blocks": {
+        "template--21753976914223__c9efeb28-756e-45c4-beca-a9177e97ab53-blog-1": {
+          "type": "blog",
+          "settings": {
+            "blog": "news",
+            "posts_count": 3,
+            "stack_items": false
+          }
+        }
+      },
+      "block_order": [
+        "template--21753976914223__c9efeb28-756e-45c4-beca-a9177e97ab53-blog-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "show_excerpt": true,
+        "show_date": true,
+        "show_author": false,
+        "show_comments_count": false,
+        "show_category": true,
+        "subheading": "",
+        "title": "Latest News from SOLE",
+        "content": "",
+        "link_url": "",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "82a6c386-00bc-40cd-bb0b-08c61e29e76e": {
+      "type": "logo-list",
+      "blocks": {
+        "template--19107506946351__82a6c386-00bc-40cd-bb0b-08c61e29e76e-logo-1": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Rounded_Facebook_svg-256.webp",
+            "logo_width": 50,
+            "link": "https://www.facebook.com/SoleTreadmills"
+          }
+        },
+        "template--19107506946351__82a6c386-00bc-40cd-bb0b-08c61e29e76e-logo-2": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Rounded_Instagram_svg-256.webp",
+            "logo_width": 50,
+            "link": "https://www.instagram.com/solefitness.us"
+          }
+        },
+        "template--19107506946351__82a6c386-00bc-40cd-bb0b-08c61e29e76e-logo-3": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/twitter-x-logo.png",
+            "logo_width": 50,
+            "link": "https://twitter.com/SoleTreadmills"
+          }
+        },
+        "template--19107506946351__82a6c386-00bc-40cd-bb0b-08c61e29e76e-logo-4": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Rounded_Pinterest2_svg-256.webp",
+            "logo_width": 50,
+            "link": "https://www.pinterest.com/soletreadmills/"
+          }
+        },
+        "template--19107506946351__82a6c386-00bc-40cd-bb0b-08c61e29e76e-logo-5": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Rounded_Youtube3_svg-256.webp",
+            "logo_width": 50,
+            "link": "https://www.youtube.com/user/SoleTreadmills"
+          }
+        }
+      },
+      "block_order": [
+        "template--19107506946351__82a6c386-00bc-40cd-bb0b-08c61e29e76e-logo-1",
+        "template--19107506946351__82a6c386-00bc-40cd-bb0b-08c61e29e76e-logo-2",
+        "template--19107506946351__82a6c386-00bc-40cd-bb0b-08c61e29e76e-logo-3",
+        "template--19107506946351__82a6c386-00bc-40cd-bb0b-08c61e29e76e-logo-4",
+        "template--19107506946351__82a6c386-00bc-40cd-bb0b-08c61e29e76e-logo-5"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "title": "Follow us on Social Media",
+        "content": "",
+        "text_alignment": "center",
+        "items_per_row": 5,
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "rgba(0,0,0,0)",
+        "heading_gradient": "",
+        "logo_item_background": "#f0f0f0",
+        "logo_item_border": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_GCQeMn",
+    "slideshow",
+    "f05a495c-2b69-4b3c-af0b-cdf908bafa27",
+    "rich_text_TVAmKU",
+    "press",
+    "featured_collection_FG8ARL",
+    "featured_product_ppYTrU",
+    "rich_text_4ixWeE",
+    "multiple_images_with_text_tmBhbp",
+    "logo_list_MHftLM",
+    "9e9897d3-42ac-4bcd-8f75-0b155c430f05",
+    "press_mpcawf",
+    "a23925b9-73db-4577-9ff8-de4c4e35b737",
+    "logo_list_CDYYHG",
+    "17ef6988-95ef-4c79-b9eb-733ca789a7a4",
+    "7ae7a07e-6f47-4431-8014-92e30cc2ca27",
+    "c9efeb28-756e-45c4-beca-a9177e97ab53",
+    "82a6c386-00bc-40cd-bb0b-08c61e29e76e"
+  ]
+}

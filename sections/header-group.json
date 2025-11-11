@@ -1,0 +1,183 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "message_cd7nMa": {
+          "type": "message",
+          "settings": {
+            "text": "SOLE Free Shipping Sale!",
+            "url": "shopify://collections/best-deals"
+          }
+        },
+        "message_3NUh8M": {
+          "type": "message",
+          "settings": {
+            "text": "Save BIG on SB900 & SB1200, Ships Free!",
+            "url": "shopify://collections/bikes"
+          }
+        },
+        "message_FAq8Fa": {
+          "type": "message",
+          "settings": {
+            "text": "Have questions? Call now to order with our friendly, US-based team.",
+            "url": "shopify://pages/contact-us"
+          }
+        },
+        "message_kkJUyw": {
+          "type": "message",
+          "settings": {
+            "text": "Now Pay with HSA/FSA Eligible Pre-Tax Funds: Select Truemed at Checkout",
+            "url": "shopify://pages/truemed-shop-with-hsa-fsa-funds"
+          }
+        },
+        "message_Mg7XNr": {
+          "type": "message",
+          "disabled": true,
+          "settings": {
+            "text": "Enjoy FREE SHIPPING*",
+            "url": "shopify://policies/shipping-policy"
+          }
+        }
+      },
+      "block_order": [
+        "message_cd7nMa",
+        "message_3NUh8M",
+        "message_FAq8Fa",
+        "message_kkJUyw",
+        "message_Mg7XNr"
+      ],
+      "settings": {
+        "enable_sticky": true,
+        "navigation_mode": "arrows",
+        "autoplay": true,
+        "cycle_speed": 4,
+        "scrolling_speed": 30,
+        "text_size": "text-xs",
+        "background": "#9d2227",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "mega_menu_WRKyTL": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "",
+            "layout": "horizontal",
+            "submenu_style": "bold_heading",
+            "image_heading_1": "",
+            "image_link_1": "",
+            "image_text_color_1": "#ffffff",
+            "image_heading_2": "",
+            "image_link_2": "",
+            "image_text_color_2": "#ffffff",
+            "image_heading_3": "",
+            "image_link_3": "",
+            "image_text_color_3": "#ffffff",
+            "product": "",
+            "product_card_background": "",
+            "product_card_text_color": "",
+            "promo_content_layout": "grid",
+            "stretch_promo": false,
+            "drawer_link_image": "hide"
+          }
+        },
+        "10be9d0b-9036-48b0-b62a-306a4d3b1397": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "Support",
+            "layout": "horizontal",
+            "submenu_style": "bold_heading",
+            "image_1": "shopify://shop_images/Best_deals_1b121478-63d4-4095-9ff2-d5f2e00d0efd.webp",
+            "image_heading_1": "",
+            "image_link_1": "shopify://collections/best-deals",
+            "image_text_color_1": "#1a1a1a",
+            "image_heading_2": "",
+            "image_link_2": "",
+            "image_text_color_2": "#ffffff",
+            "image_heading_3": "",
+            "image_link_3": "",
+            "image_text_color_3": "#ffffff",
+            "product": "",
+            "product_card_background": "",
+            "product_card_text_color": "",
+            "promo_content_layout": "grid",
+            "stretch_promo": false,
+            "drawer_link_image": "hide"
+          }
+        },
+        "31fde32d-c0bc-4a11-89be-35fdddeb6f35": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "Best Deals",
+            "layout": "horizontal",
+            "submenu_style": "bold_heading",
+            "image_1": "shopify://shop_images/Best_deals_1b121478-63d4-4095-9ff2-d5f2e00d0efd.webp",
+            "image_heading_1": "",
+            "image_link_1": "shopify://collections/best-deals",
+            "image_text_color_1": "#000000",
+            "image_heading_2": "",
+            "image_link_2": "",
+            "image_text_color_2": "#ffffff",
+            "image_heading_3": "",
+            "image_link_3": "",
+            "image_text_color_3": "#ffffff",
+            "product": "",
+            "product_card_background": "",
+            "product_card_text_color": "",
+            "promo_content_layout": "grid",
+            "stretch_promo": false,
+            "drawer_link_image": "hide"
+          }
+        }
+      },
+      "block_order": [
+        "mega_menu_WRKyTL",
+        "10be9d0b-9036-48b0-b62a-306a4d3b1397",
+        "31fde32d-c0bc-4a11-89be-35fdddeb6f35"
+      ],
+      "settings": {
+        "enable_sticky": true,
+        "hide_on_scroll": false,
+        "phone_number": "866-780-7653",
+        "logo": "shopify://shop_images/LogoB_R.svg",
+        "logo_max_width": 160,
+        "logo_mobile_max_width": 100,
+        "menu": "main-menu",
+        "sidebar_menu": "",
+        "secondary_menu": "",
+        "menu_open_trigger": "hover",
+        "opening_from": "bottom",
+        "layout": "logo_left_navigation_center",
+        "show_social_media": true,
+        "show_locale_selector": true,
+        "show_country_selector": true,
+        "show_country_flag": true,
+        "show_country_name": false,
+        "transparent_header_text_color": "#ffffff",
+        "transparent_logo": "shopify://shop_images/sole_white.svg",
+        "reduce_padding": false,
+        "background_opacity": 100,
+        "background_blur_radius": 0
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

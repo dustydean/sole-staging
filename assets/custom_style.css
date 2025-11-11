@@ -1,0 +1,110 @@
+/* This is custom style code. */
+
+html {
+  -moz-tab-size: 4;
+/*   border: 1px solid red; */
+}
+
+[type="search"] {
+  appearance: textfield;
+}
+
+.block-label {
+  width: -moz-fit-content;
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px currentColor;
+  -webkit-text-fill-color: transparent;
+}
+
+.block-swatch {
+  white-space: nowrap;
+}
+
+.bg-custom {
+  background: rgb(var(--background));
+}
+
+.phone-icon {
+  display: none; /* Ensure this starts as hidden to be shown only in mobile views */
+}
+
+.phone-text {
+  display: none; /* Hidden on mobile by default */
+}
+
+@media screen and (min-width: 992px) {
+  /* Desktop displays only the text */
+  .phone-text {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* Mobile displays only the icon */
+  .phone-icon {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1149px) and (max-width: 1304px) {
+  .phone-text {
+    display: none; /* Hide phone number text */
+  }
+
+  .phone-icon {
+    display: flex; /* Show phone icon */
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1464px) {
+  .phone-text {
+    white-space: nowrap;  /* Prevent the phone number from wrapping */
+    font-size: calc(100% - 1px);  /* Slightly reduce font size if necessary */
+  }
+}
+
+/* ============================================
+   RESELLERRATINGS REVIEWS STYLING
+   Prevents flash of unstyled purple stars
+   ============================================ */
+
+/* Hide RR container initially to prevent FOUC (Flash of Unstyled Content) */
+.product-info__resellerratings-stars {
+  visibility: hidden;
+}
+
+/* Show container only when RR widget has loaded */
+.product-info__resellerratings-stars:has(.RRPR_src-features-display-stars-styles__star) {
+  visibility: visible;
+}
+
+/* Fallback for browsers without :has() support */
+@supports not (selector(:has(*))) {
+  .product-info__resellerratings-stars {
+    visibility: visible;
+  }
+}
+
+/* Convert stars from purple to grayscale (black/gray) */
+.resellerratings-stars,
+#RR_PR_Widget_Wrapper {
+  filter: grayscale(100%) !important;
+}
+
+/* Resize star container to be smaller */
+.RRPR_src-features-display-stars-styles__container {
+  font-size: 14px !important;
+}
+
+/* Override RR inline styles - make stars smaller */
+.RRPR_src-features-display-stars-styles__star {
+  font-size: 1.2em !important;
+  color: #999999 !important;
+}
+
+/* Filled portion of stars - black */
+.RRPR_src-features-display-stars-styles__fill {
+  color: #000000 !important;
+}

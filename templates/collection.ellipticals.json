@@ -1,0 +1,806 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "collection-banner",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": true,
+        "show_collection_title": true,
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "collection_title_size": "h0",
+        "image_size": "auto",
+        "image": "shopify://shop_images/Halloween_decorations.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "featured_product": "",
+        "featured_product_heading": "Featured product",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "e11e3c3f-7513-459c-971e-5e93b5584109": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--21444391371055__e11e3c3f-7513-459c-971e-5e93b5584109-subheading-1": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "SOLE"
+          }
+        },
+        "template--21444391371055__e11e3c3f-7513-459c-971e-5e93b5584109-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Ellipticals",
+            "heading_tag": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "template--21444391371055__e11e3c3f-7513-459c-971e-5e93b5584109-subheading-1",
+        "template--21444391371055__e11e3c3f-7513-459c-971e-5e93b5584109-heading-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/Ellipticals_banner.webp",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#f0f0f0",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      },
+      "disabled": true
+    },
+    "image_with_text_overlay_dABzG3": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_EHby69": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_3FqfJe": {
+          "type": "heading",
+          "settings": {
+            "text": "Ellipticals",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_AE8zJA": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_EHby69",
+        "heading_3FqfJe",
+        "richtext_AE8zJA"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/Sale_Banner_Desktop_No_Tricks_Just_Deals_2024.webp",
+        "mobile_image": "shopify://shop_images/Sale_Banner_Mobile_No_Tricks_Just_Deals_2024.webp",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "featured_collection_9gL6By": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "collection": "ellipticals",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "d392f384-505b-499a-99dc-00ee7f39baa6": {
+      "type": "rich-text",
+      "blocks": {
+        "7db6f238-2b0b-4b08-8f04-f3ec12475554": {
+          "type": "heading",
+          "settings": {
+            "text": "Built for Comfort. Engineered for Endurance.",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--21444391371055__d392f384-505b-499a-99dc-00ee7f39baa6-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Heavy flywheels, adjustable pedals, and whisper-quiet motion deliver a smooth, low-impact workout—no subscription required.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "7db6f238-2b0b-4b08-8f04-f3ec12475554",
+        "template--21444391371055__d392f384-505b-499a-99dc-00ee7f39baa6-richtext-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "e35-promo-banner": {
+      "type": "rich-text",
+      "blocks": {
+        "promo-heading": {
+          "type": "heading",
+          "settings": {
+            "text": "SOLE Black Friday: $200 Off E35 + Free Shipping",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "promo-link": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><a href=\"/products/sole-e35\">Shop E35 Today →</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "promo-heading",
+        "promo-link"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#e8e8e8",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "6c93c573-e5e0-4c96-845d-39495aab94ef": {
+      "type": "rich-text",
+      "blocks": {
+        "bb2d5bdb-0655-4be5-b413-20adea7de605": {
+          "type": "heading",
+          "settings": {
+            "text": "E25 and E35 Elliptical Series",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "135533e3-f2bf-4a2b-b4fd-7b76669fa78a": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Entry to mid-level ellipticals—smooth motion, adjustable incline, great value.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "bb2d5bdb-0655-4be5-b413-20adea7de605",
+        "135533e3-f2bf-4a2b-b4fd-7b76669fa78a"
+      ],
+      "custom_css": [],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "db06c0b2-bd02-4a1f-8619-fd63bcd30d5e": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "",
+        "products": [
+          "sole-e25",
+          "sole-e35"
+        ],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 2,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 2,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "b7178c0b-ea6d-4d88-ab73-5ed649a85ba4": {
+      "type": "feature-chart",
+      "blocks": {
+        "template--21812144177455__b7178c0b-ea6d-4d88-ab73-5ed649a85ba4-headings-1": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Display",
+            "heading_2": "Programs",
+            "heading_3": "Flywheel Weight ",
+            "heading_4": "Hand Grips",
+            "heading_5": "Adjustable Pedals",
+            "heading_6": "Device Charging ",
+            "heading_7": "WiFi",
+            "heading_8": "Preloaded Apps",
+            "heading_9": "",
+            "heading_10": "",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "template--21812144177455__b7178c0b-ea6d-4d88-ab73-5ed649a85ba4-values-1": {
+          "type": "values",
+          "settings": {
+            "product": "sole-e25",
+            "value_1": "<p>7.5\" Backlit LCD</p>",
+            "value_2": "<p>7 pre-programmed, 2 user-defined</p>",
+            "value_3": "<p>20 lbs.</p>",
+            "value_4": "<p>Straight, foam coated</p>",
+            "value_5": "<p>No</p>",
+            "value_6": "<p>USB type A, 5V 1A</p>",
+            "value_7": "<p>No</p>",
+            "value_8": "<p>No</p>",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "template--21812144177455__b7178c0b-ea6d-4d88-ab73-5ed649a85ba4-values-2": {
+          "type": "values",
+          "settings": {
+            "product": "sole-e35",
+            "value_1": "<p>10.1\" Touchscreen</p>",
+            "value_2": "<p>10 pre-programmed, 12 user-defined</p>",
+            "value_3": "<p>25 lbs.</p>",
+            "value_4": "<p>Multi-position, rubber coated</p>",
+            "value_5": "<p>Yes, 3 levels pin adjusted</p>",
+            "value_6": "<p>Wireless charging</p>",
+            "value_7": "<p>Yes</p>",
+            "value_8": "<p>Yes</p>",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21812144177455__b7178c0b-ea6d-4d88-ab73-5ed649a85ba4-headings-1",
+        "template--21812144177455__b7178c0b-ea6d-4d88-ab73-5ed649a85ba4-values-1",
+        "template--21812144177455__b7178c0b-ea6d-4d88-ab73-5ed649a85ba4-values-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Comparing the E25 and E35 Ellipticals",
+        "content": "<p>For full specifications, see each product individually. Below are the most significant differences for a quick comparison.</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "",
+        "viewing_product": "",
+        "show_product_swatch": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "ac9033fc-b772-4e10-8e5f-ca1911bca743": {
+      "type": "rich-text",
+      "blocks": {
+        "f3ec3479-9f18-4dca-ac79-083376efa7f4": {
+          "type": "heading",
+          "settings": {
+            "text": "E9X Elliptical Series",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "8fe8d1ff-af4a-4b7a-971a-54c6604e2ba3": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Premium ellipticals—adjustable pedals/stride, touchscreens, SOLE+ integration.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "f3ec3479-9f18-4dca-ac79-083376efa7f4",
+        "8fe8d1ff-af4a-4b7a-971a-54c6604e2ba3"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "f3d8655f-c27e-473b-a63f-81893fd6d97b": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "",
+        "products": [
+          "sole-e95",
+          "sole-e95s",
+          "sole-e98"
+        ],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 3,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "abd8e554-7d82-4898-8fdd-6e48dde5d2f6": {
+      "type": "feature-chart",
+      "blocks": {
+        "56231bcf-e477-4aa1-859e-c355ba0ed025": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Flywheel Weight",
+            "heading_2": "Adjustable Pedals",
+            "heading_3": "Adjustable Stride",
+            "heading_4": "WiFi, Bluetooth & SOLE+ Integration",
+            "heading_5": "",
+            "heading_6": "",
+            "heading_7": "",
+            "heading_8": "",
+            "heading_9": "",
+            "heading_10": "",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "26c22f3b-4f5c-480c-a771-858bf68658ea": {
+          "type": "values",
+          "settings": {
+            "product": "sole-e95",
+            "value_1": "<p>27 lbs.</p>",
+            "value_2": "<p>Yes, 10 levels knob adjusted</p>",
+            "value_3": "<p>No</p>",
+            "value_4": "<p>Yes</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "ecaa5ac2-e545-470f-be57-2bbb31d6f74b": {
+          "type": "values",
+          "settings": {
+            "product": "sole-e95s",
+            "value_1": "<p>30 lbs.</p>",
+            "value_2": "<p>No</p>",
+            "value_3": "<p>Power Adjustable 18\" to 24\"</p>",
+            "value_4": "<p>Yes</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "5161b440-20f7-4ac7-b457-6b8e79cdf46b": {
+          "type": "values",
+          "settings": {
+            "product": "sole-e98",
+            "value_1": "<p>32 lbs.</p>",
+            "value_2": "<p>No</p>",
+            "value_3": "<p>No</p>",
+            "value_4": "<p>Yes</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "56231bcf-e477-4aa1-859e-c355ba0ed025",
+        "26c22f3b-4f5c-480c-a771-858bf68658ea",
+        "ecaa5ac2-e545-470f-be57-2bbb31d6f74b",
+        "5161b440-20f7-4ac7-b457-6b8e79cdf46b"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Comparing the E9X Ellipticals",
+        "content": "<p>For full specifications, see each product individually. Below are the most significant differences for a quick comparison.</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "",
+        "viewing_product": "",
+        "show_product_swatch": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "f22dcb8e-ce0e-4a57-8480-87b43789813f": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--21812144177455__f22dcb8e-ce0e-4a57-8480-87b43789813f-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "The SOLE Experience"
+          }
+        },
+        "template--21812144177455__f22dcb8e-ce0e-4a57-8480-87b43789813f-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Enjoy Complimentary Curbside Shipping with Every SOLE Order!",
+            "heading_tag": "h1"
+          }
+        },
+        "template--21812144177455__f22dcb8e-ce0e-4a57-8480-87b43789813f-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Never worry about having to pay for shipping with SOLE. All our products ship for FREE with our Curbside Delivery option. <br/><em>Restrictions Apply. See our Shipping Policies page. </em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21812144177455__f22dcb8e-ce0e-4a57-8480-87b43789813f-subheading-1",
+        "template--21812144177455__f22dcb8e-ce0e-4a57-8480-87b43789813f-heading-1",
+        "template--21812144177455__f22dcb8e-ce0e-4a57-8480-87b43789813f-richtext-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": true,
+        "image_size": "sm",
+        "image": "shopify://shop_images/Shipping.webp",
+        "mobile_text_position": "place-self-center-start text-start",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 40
+      }
+    },
+    "5d36c499-7288-4ef3-bd65-a8e832ee1a0a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21812144177455__5d36c499-7288-4ef3-bd65-a8e832ee1a0a-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "The SOLE+ Advantage",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--21812144177455__5d36c499-7288-4ef3-bd65-a8e832ee1a0a-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We also offer FREE online fitness classes to every one of our customers.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21812144177455__5d36c499-7288-4ef3-bd65-a8e832ee1a0a-heading-1",
+        "template--21812144177455__5d36c499-7288-4ef3-bd65-a8e832ee1a0a-richtext-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "d413c24c-5388-49ce-bb22-49bd08928945": {
+      "type": "slideshow",
+      "blocks": {
+        "template--21812144177455__d413c24c-5388-49ce-bb22-49bd08928945-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Banner_3.png",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "WITH OUR SOLE+ APP YOU CAN ACCESS THOUSANDS OF FREE WORKOUT CLASSES",
+            "heading_tag": "h2",
+            "button_text": "CHECK OUT THE BENEFITS",
+            "button_link": "shopify://pages/sole",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21812144177455__d413c24c-5388-49ce-bb22-49bd08928945-image-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "show_initial_transition": false,
+        "image_size": "auto",
+        "controls_type": "outline_arrows",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 24,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "filter_layout": "drawer",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_first_filter_group": false
+      }
+    },
+    "771580e6-772d-463f-aeb9-1ee20975ca7a": {
+      "type": "faq",
+      "blocks": {
+        "template--21812144177455__771580e6-772d-463f-aeb9-1ee20975ca7a-item-1": {
+          "type": "item",
+          "settings": {
+            "title": "Premier Ellipticals for Your Home Fitness Routine",
+            "content": "<p>Welcome to Sole Ellipticals, your destination for top-rated elliptical machines perfect for home fitness enthusiasts. Whether you're just starting your fitness journey or are an experienced athlete, our range of ellipticals is designed to cater to all levels, providing a low-impact, effective workout in the comfort of your home.</p>"
+          }
+        },
+        "template--21812144177455__771580e6-772d-463f-aeb9-1ee20975ca7a-item-2": {
+          "type": "item",
+          "settings": {
+            "title": "Why Choose Our Ellipticals?",
+            "content": "<p>Our ellipticals are crafted with your fitness goals in mind, blending ergonomic design, user-friendly features, and the latest technology. We understand the importance of a reliable and comfortable elliptical for your home workouts. That's why our selection offers a variety of options to suit different preferences and fitness levels, from gentle gliding motions to more intense workouts.</p>"
+          }
+        },
+        "7d98e82a-7687-4123-812e-264bc19b9829": {
+          "type": "item",
+          "settings": {
+            "title": "Discover Our Range of Top-Rated Ellipticals",
+            "content": "<p>Immerse yourself in our diverse collection and find out why our ellipticals are consistently praised for their quality and performance. Each machine is engineered for a smooth, natural elliptical motion, featuring sturdy construction, advanced stride technology, and user-centric controls for a superior exercise experience.</p>"
+          }
+        },
+        "template--21812144177455__771580e6-772d-463f-aeb9-1ee20975ca7a-item-3": {
+          "type": "item",
+          "settings": {
+            "title": "Frequently Asked Questions",
+            "content": "<p>Have questions? We've got answers. Check out our <a href=\"/pages/faq\" title=\"Frequently Asked Questions\">FAQ section</a> where we address common queries about treadmill maintenance, warranty, delivery, and more.</p>"
+          }
+        },
+        "f9d42c6c-76ad-4769-b2f9-adc9b445c16f": {
+          "type": "item",
+          "settings": {
+            "title": "Customer Reviews: Hear from Our Happy Customers",
+            "content": "<p>Hear directly from our satisfied customers who have enhanced their fitness routines with our ellipticals. Their stories reflect our dedication to quality and customer satisfaction, showcasing how our machines have positively impacted their health and fitness.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21812144177455__771580e6-772d-463f-aeb9-1ee20975ca7a-item-1",
+        "template--21812144177455__771580e6-772d-463f-aeb9-1ee20975ca7a-item-2",
+        "7d98e82a-7687-4123-812e-264bc19b9829",
+        "template--21812144177455__771580e6-772d-463f-aeb9-1ee20975ca7a-item-3",
+        "f9d42c6c-76ad-4769-b2f9-adc9b445c16f"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "SOLE",
+        "title": "EXPLORE, REVIEWS, AND FAQ",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "e11e3c3f-7513-459c-971e-5e93b5584109",
+    "image_with_text_overlay_dABzG3",
+    "featured_collection_9gL6By",
+    "d392f384-505b-499a-99dc-00ee7f39baa6",
+    "e35-promo-banner",
+    "6c93c573-e5e0-4c96-845d-39495aab94ef",
+    "db06c0b2-bd02-4a1f-8619-fd63bcd30d5e",
+    "b7178c0b-ea6d-4d88-ab73-5ed649a85ba4",
+    "ac9033fc-b772-4e10-8e5f-ca1911bca743",
+    "f3d8655f-c27e-473b-a63f-81893fd6d97b",
+    "abd8e554-7d82-4898-8fdd-6e48dde5d2f6",
+    "f22dcb8e-ce0e-4a57-8480-87b43789813f",
+    "5d36c499-7288-4ef3-bd65-a8e832ee1a0a",
+    "d413c24c-5388-49ce-bb22-49bd08928945",
+    "main",
+    "771580e6-772d-463f-aeb9-1ee20975ca7a"
+  ]
+}
