@@ -1,0 +1,184 @@
+{%- comment -%}
+  Section: Compare SOLE F80
+  File: sections/treadmill-f80-compare.liquid
+  - Dynamic: rows are blocks (brand / competitor)
+  - Editable: heading, paragraph, year headings, disclaimer, per-row logo/name/values/highlight.
+{%- endcomment -%}
+
+<section id="shopify-section-{{ section.id }}" class="treadmill-f80-compare shopify-section pdp__savings">
+  <div class="pdp__savings {% if section.settings.full_width %}container-full{% else %}pdp__container{% endif %}" >
+    <div class="pdp__savings-content">
+      {% if section.settings.heading != blank %}
+        <h2 class="pdp__savings-title">{{ section.settings.heading | raw  }}</h2>
+      {% endif %}
+      {% if section.settings.text != blank %}
+        <p class="pdp__savings-text">{{ section.settings.text }}</p>
+      {% endif %}
+    </div>
+
+    <div class="pdp__comparison">
+      <table class="pdp__comparison-table" role="table" aria-label="{{ section.settings.heading | escape }}">
+        <thead>
+          <tr>
+            <th scope="col" class="pdp__comparison-header pdp__comparison-header--brand"></th>
+            <th scope="col" class="pdp__comparison-header">{{ section.settings.year_label_1 }}</th>
+            <th scope="col" class="pdp__comparison-header">{{ section.settings.year_label_2 }}</th>
+            <th scope="col" class="pdp__comparison-header">{{ section.settings.year_label_3 }}</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {%- for block in section.blocks -%}
+            <tr class="pdp__comparison-row {% if block.settings.highlight %}pdp__comparison-row--highlight{% endif %}">
+              <th scope="row" class="pdp__comparison-brand">
+                {% if block.settings.brand_logo != blank %}
+                  <img src="{{ block.settings.brand_logo | img_url: '200x' }}" alt="{{ block.settings.brand_name | escape }}" loading="lazy" decoding="async" />
+                {% else %}
+                  <span class="pdp__brand-name">{{ block.settings.brand_name }}</span>
+                {% endif %}
+              </th>
+
+              <td class="pdp__comparison-value">{{ block.settings.year_1 }}</td>
+              <td class="pdp__comparison-value">{{ block.settings.year_2 }}</td>
+              <td class="pdp__comparison-value">{{ block.settings.year_3 }}</td>
+            </tr>
+          {%- endfor -%}
+        </tbody>
+      </table>
+
+      {% if section.settings.disclaimer != blank %}
+        <p class="pdp__disclaimer">{{ section.settings.disclaimer }}</p>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Compare SOLE F80",
+  "settings": [
+    {
+      "type": "html",
+  "id": "heading",
+  "label": "Heading (HTML)",
+  "default": "<strong>Everything Works From Day One – No Lock-Ins</strong>"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Intro paragraph",
+      "default": "With SOLE, you own the treadmill — not a subscription. Every workout, every app, and every feature works from day one. Competing treadmills can cost $39–$44/month just to unlock features — that's up to $1,584 saved in three years."
+    },
+    {
+      "type": "text",
+      "id": "year_label_1",
+      "label": "Column label - Year 1",
+      "default": "Year 1"
+    },
+    {
+      "type": "text",
+      "id": "year_label_2",
+      "label": "Column label - Year 2",
+      "default": "Year 2"
+    },
+    {
+      "type": "text",
+      "id": "year_label_3",
+      "label": "Column label - Year 3",
+      "default": "Year 3"
+    },
+    {
+      "type": "textarea",
+      "id": "disclaimer",
+      "label": "Disclaimer text",
+      "default": "*Prices verified on manufacturer websites on Sept 18, 2025. NordicTrack iFIT membership ~$39/month billed annually. Peloton All-Access membership ~$44/month. Prices subject to change without notice."
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width (stretch to edge)",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Row",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "brand_logo",
+          "label": "Brand logo (optional)"
+        },
+        {
+          "type": "text",
+          "id": "brand_name",
+          "label": "Brand name (if no logo)",
+          "default": "Brand"
+        },
+        {
+          "type": "text",
+          "id": "year_1",
+          "label": "Year 1 value",
+          "default": "$0"
+        },
+        {
+          "type": "text",
+          "id": "year_2",
+          "label": "Year 2 value",
+          "default": "$0"
+        },
+        {
+          "type": "text",
+          "id": "year_3",
+          "label": "Year 3 value",
+          "default": "$0"
+        },
+        {
+          "type": "checkbox",
+          "id": "highlight",
+          "label": "Highlight this row (brand product)",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    {
+      "name": "Compare SOLE F80",
+      "category": "Product",
+      "blocks": [
+        {
+          "type": "row",
+          "settings": {
+            "brand_name": "SOLE",
+            "year_1": "$0",
+            "year_2": "$0",
+            "year_3": "$0",
+            "highlight": true
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "brand_name": "NordicTrack",
+            "year_1": "$480",
+            "year_2": "$960",
+            "year_3": "$1,440"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "brand_name": "Peloton",
+            "year_1": "$528",
+            "year_2": "$1,056",
+            "year_3": "$1,584"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

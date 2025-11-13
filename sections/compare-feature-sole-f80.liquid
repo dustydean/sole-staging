@@ -1,0 +1,208 @@
+{%- comment -%}
+  Section: Compare FEATURE SOLE F80
+  File: sections/compare-feature-sole-f80.liquid
+{%- endcomment -%}
+
+<section id="shopify-section-{{ section.id }}" class="compare-feature-sole-f80 shopify-section pdp__full-comparison">
+  <div class="{% if section.settings.full_width %}container-full{% else %}pdp__container{% endif %}"
+       {% if section.settings.background_color != blank %}style="background: {{ section.settings.background_color }};"{% endif %} id="compare_sec">
+
+    {% if section.settings.heading != blank %}
+      <h2 class="pdp__section-title">{{ section.settings.heading }}</h2>
+    {% endif %}
+
+    <div class="pdp__spec-table-wrapper">
+      <table class="pdp__spec-table" role="table" aria-label="Product feature comparison">
+        <thead>
+          <tr>
+            <th class="pdp__spec-header pdp__spec-header--icon startcell" scope="col"><img src="{{ 'treadmill_f80/star_red.svg' | asset_url }}" alt="Red Star">
+</th>
+            <th class="pdp__spec-header pdp__spec-header--feature" scope="col">{{ section.settings.features_label }}</th>
+            <th class="pdp__spec-header {% if section.settings.highlight_column == 'sole' %}pdp__spec-header--highlight{% endif %}" scope="col">{{ section.settings.sole_column_label }}</th>
+            <th class="pdp__spec-header {% if section.settings.highlight_column == 'comp1' %}pdp__spec-header--highlight{% endif %}" scope="col">{{ section.settings.competitor_1_label }}</th>
+            <th class="pdp__spec-header {% if section.settings.highlight_column == 'comp2' %}pdp__spec-header--highlight{% endif %}" scope="col">{{ section.settings.competitor_2_label }}</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {%- for block in section.blocks -%}
+            <tr class="pdp__spec-row">
+              <td class="pdp__spec-icon" role="cell">
+                {% if block.settings.icon != blank %}
+                  <img src="{{ block.settings.icon | img_url: '100x' }}" alt="{{ block.settings.icon_alt | escape }}" loading="lazy" decoding="async" width="32" height="32">
+                {% endif %}
+              </td>
+
+              <th scope="row" class="pdp__spec-feature" role="rowheader">
+                {{ block.settings.feature }}
+              </th>
+
+              <td class="pdp__spec-value {% if section.settings.highlight_column == 'sole' %}pdp__spec-value--highlight{% endif %}" role="cell">
+                {% if block.settings.sole_value != blank %}
+                  <div class="pdp__spec-main">{{ block.settings.sole_value }}</div>
+                {% endif %}
+                {% if block.settings.sole_subvalue != blank %}
+                  <div class="pdp__spec-sub">{{ block.settings.sole_subvalue }}</div>
+                {% endif %}
+              </td>
+
+              <td class="pdp__spec-value {% if section.settings.highlight_column == 'comp1' %}pdp__spec-value--highlight{% endif %}" role="cell">
+                {% if block.settings.comp1_value != blank %}
+                  <div class="pdp__spec-main">{{ block.settings.comp1_value }}</div>
+                {% endif %}
+                {% if block.settings.comp1_subvalue != blank %}
+                  <div class="pdp__spec-sub">{{ block.settings.comp1_subvalue }}</div>
+                {% endif %}
+              </td>
+
+              <td class="pdp__spec-value {% if section.settings.highlight_column == 'comp2' %}pdp__spec-value--highlight{% endif %}" role="cell">
+                {% if block.settings.comp2_value != blank %}
+                  <div class="pdp__spec-main">{{ block.settings.comp2_value }}</div>
+                {% endif %}
+                {% if block.settings.comp2_subvalue != blank %}
+                  <div class="pdp__spec-sub">{{ block.settings.comp2_subvalue }}</div>
+                {% endif %}
+              </td>
+            </tr>
+          {%- endfor -%}
+        </tbody>
+      </table>
+
+      {% if section.settings.disclaimer != blank %}
+        <p class="pdp__disclaimer">{{ section.settings.disclaimer }}</p>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Compare FEATURE SOLE F80",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section heading",
+      "default": "Feature Comparison"
+    },
+    {
+      "type": "text",
+      "id": "features_label",
+      "label": "Left column label (features)",
+      "default": "FEATURE"
+    },
+    {
+      "type": "text",
+      "id": "sole_column_label",
+      "label": "SOLE column label",
+      "default": "SOLE F80"
+    },
+    {
+      "type": "text",
+      "id": "competitor_1_label",
+      "label": "Competitor 1 column label",
+      "default": "NordicTrack 1750"
+    },
+    {
+      "type": "text",
+      "id": "competitor_2_label",
+      "label": "Competitor 2 column label",
+      "default": "Peloton Tread"
+    },
+    {
+      "type": "select",
+      "id": "highlight_column",
+      "label": "Highlight column",
+      "options": [
+        { "value": "none", "label": "None" },
+        { "value": "sole", "label": "SOLE" },
+        { "value": "comp1", "label": "Competitor 1" },
+        { "value": "comp2", "label": "Competitor 2" }
+      ],
+      "default": "sole"
+    },
+    {
+      "type": "text",
+      "id": "disclaimer",
+      "label": "Disclaimer text",
+      "default": "*Prices verified on manufacturer websites on Sept 18, 2025; subject to change without notice."
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Stretch section full width",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature row",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Left icon"
+        },
+        {
+          "type": "text",
+          "id": "icon_alt",
+          "label": "Icon alt text",
+          "default": "Feature icon"
+        },
+        {
+          "type": "text",
+          "id": "feature",
+          "label": "Feature title",
+          "default": "CURRENT PRICE"
+        },
+        {
+          "type": "text",
+          "id": "sole_value",
+          "label": "SOLE value (main)",
+          "default": "$1,899"
+        },
+        {
+          "type": "text",
+          "id": "sole_subvalue",
+          "label": "SOLE subvalue (small / parenthesis)"
+        },
+        {
+          "type": "text",
+          "id": "comp1_value",
+          "label": "Competitor 1 value (main)",
+          "default": "$2,499"
+        },
+        {
+          "type": "text",
+          "id": "comp1_subvalue",
+          "label": "Competitor 1 subvalue (small)"
+        },
+        {
+          "type": "text",
+          "id": "comp2_value",
+          "label": "Competitor 2 value (main)",
+          "default": "$2,995"
+        },
+        {
+          "type": "text",
+          "id": "comp2_subvalue",
+          "label": "Competitor 2 subvalue (small)"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 40,
+  "presets": [
+    {
+      "name": "Compare FEATURE SOLE F80",
+      "category": "Product"
+    }
+  ]
+}
+{% endschema %}

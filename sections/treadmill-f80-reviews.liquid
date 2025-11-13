@@ -1,0 +1,229 @@
+{%- comment -%}
+  Section: F80 Review Slider
+  File: sections/treadmill-f80-reviews.liquid
+  - Dynamic: each review is a block (title, richtext review, author, rating)
+  - Settings: title, autoplay, interval, arrows, dots, loop, full_width
+  - JS: scoped per section instance to avoid collisions
+{%- endcomment -%}
+
+<section id="shopify-section-{{ section.id }}" class="treadmill-f80-reviews shopify-section pdp__social-proof">
+  <div class="{% if section.settings.full_width %}container-full{% else %}pdp__container{% endif %}">
+    {% if section.settings.title != blank %}
+      <h2 class="pdp__section-title">{{ section.settings.title }}</h2>
+    {% endif %}
+
+    <div class="pdp__reviews-slider"
+         data-autoplay="{{ section.settings.autoplay | json }}"
+         data-interval="{{ section.settings.autoplay_interval }}"
+         data-show-arrows="{{ section.settings.show_arrows | json }}"
+         data-show-dots="{{ section.settings.show_dots | json }}"
+         data-loop="{{ section.settings.loop | json }}"
+         data-section-id="{{ section.id }}"
+         data-slider="reviews"
+         role="region"
+         aria-roledescription="carousel">
+
+      <!-- Prev Arrow -->
+      <button class="pdp__reviews-arrow pdp__reviews-arrow--prev" aria-label="Previous review" {% unless section.settings.show_arrows %}style="display:none"{% endunless %}>
+        <svg width="7" height="20" viewBox="0 0 7 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 1L1 10L6 19" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <!-- Reviews Track Container -->
+      <div class="pdp__reviews-track-container">
+        <div class="pdp__reviews-track" role="list">
+          {%- for block in section.blocks -%}
+            <div class="pdp__review-card" role="group" aria-roledescription="slide" aria-label="{{ forloop.index }} of {{ section.blocks.size }}">
+              {% if block.settings.review_title != blank %}
+                <h3 class="pdp__review-title">{{ block.settings.review_title }}</h3>
+              {% endif %}
+
+              {% if block.settings.review_text != blank %}
+                <div class="pdp__review-text">{{ block.settings.review_text }}</div>
+              {% endif %}
+
+              {% if block.settings.review_author != blank %}
+                <div class="pdp__review-author">{{ block.settings.review_author }}</div>
+              {% endif %}
+
+              <div class="pdp__review-stars" aria-label="{{ block.settings.rating }} out of 5 stars" data-rating="{{ block.settings.rating }}">
+                {%- assign r = block.settings.rating | plus: 0 -%}
+                {%- for i in (1..5) -%}
+                  {% if i <= r %}
+                    <span class="pdp__review-star">★</span>
+                  {% else %}
+                    <span class="pdp__review-star pdp__review-star--empty">★</span>
+                  {% endif %}
+                {%- endfor -%}
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+
+      <!-- Next Arrow -->
+      <button class="pdp__reviews-arrow pdp__reviews-arrow--next" aria-label="Next review" {% unless section.settings.show_arrows %}style="display:none"{% endunless %}>
+        <svg width="7" height="20" viewBox="0 0 7 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L6 10L1 19" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <!-- Pagination Dots -->
+      <div class="pdp__reviews-pagination" role="tablist" aria-label="Review navigation" {% unless section.settings.show_dots %}style="display:none"{% endunless %}>
+        {%- for block in section.blocks -%}
+          <button class="pdp__reviews-dot {% if forloop.first %}pdp__reviews-dot--active{% endif %}"
+                  data-index="{{ forloop.index0 }}"
+                  role="tab"
+                  aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+                  aria-label="Go to review {{ forloop.index }}"></button>
+        {%- endfor -%}
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "F80 Review Slider",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section title",
+      "default": "Customer Reviews"
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Autoplay reviews",
+      "default": true
+    },
+    {
+      "type": "number",
+      "id": "autoplay_interval",
+      "label": "Autoplay interval (ms)",
+      "default": 6000
+    },
+    {
+      "type": "checkbox",
+      "id": "show_arrows",
+      "label": "Show navigation arrows",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_dots",
+      "label": "Show pagination dots",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "loop",
+      "label": "Loop reviews",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Stretch full width",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        {
+          "type": "text",
+          "id": "review_title",
+          "label": "Review title",
+          "default": "Great So Far!"
+        },
+        {
+          "type": "richtext",
+          "id": "review_text",
+          "label": "Review text",
+          "default": "<p>It's a huge upgrade from my last treadmill. Seems quieter and very sturdy. Wasn't too hard to put together.</p>"
+        },
+        {
+          "type": "text",
+          "id": "review_author",
+          "label": "Reviewer name",
+          "default": "Missouri Runner"
+        },
+        {
+          "type": "select",
+          "id": "rating",
+          "label": "Rating",
+          "options": [
+            { "value": "1", "label": "1 star" },
+            { "value": "2", "label": "2 stars" },
+            { "value": "3", "label": "3 stars" },
+            { "value": "4", "label": "4 stars" },
+            { "value": "5", "label": "5 stars" }
+          ],
+          "default": "5"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 20,
+  "presets": [
+    {
+      "name": "F80 Review Slider",
+      "category": "Product",
+      "blocks": [
+        {
+          "type": "review",
+          "settings": {
+            "review_title": "Great So Far!",
+            "review_text": "<p>It's a huge upgrade from my last treadmill. Seems quieter and very sturdy. Wasn't too hard to put together. I do wish the tablet tray part felt more solid while running but I don't really use it so it's not a big deal.</p>",
+            "review_author": "Missouri Runner",
+            "rating": "5"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "review_title": "Best Investment Ever",
+            "review_text": "<p>I've had this treadmill for 6 months now and it's been amazing. The build quality is exceptional - feels like the machines at my gym.</p>",
+            "review_author": "Fitness Enthusiast",
+            "rating": "5"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "review_title": "Quiet and Stable",
+            "review_text": "<p>I live in an apartment and was worried about noise. This treadmill is incredibly quiet - I can run at 6am without disturbing my neighbors.</p>",
+            "review_author": "Sarah M.",
+            "rating": "5"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "review_title": "Solid Build Quality",
+            "review_text": "<p>I'm a bigger guy (310 lbs) and this treadmill handles my weight without any issues. Zero wobbling even when I'm running at full speed.</p>",
+            "review_author": "Mike D.",
+            "rating": "5"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "review_title": "Perfect for Home Gym",
+            "review_text": "<p>After months of research, I'm so glad I chose the SOLE F80. The folding mechanism is genius - it folds up easily when I need the space back.</p>",
+            "review_author": "Jennifer K.",
+            "rating": "4"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
