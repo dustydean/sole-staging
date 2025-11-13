@@ -1,0 +1,53 @@
+<div class="product-after-qty">
+<label class="block-label text-subdued">Compare:</label>
+  <a href="#compare_sec">
+   Compare<svg width="9" height="7" viewBox="0 0 9 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.752686 0.658203L4.25269 4.6582L7.75269 0.658203" stroke="black" stroke-width="2"/>
+</svg>
+
+  </a>
+</div>
+
+<script>
+(function () {
+  function moveButtonInsideQty() {
+    var qtyInner = document.querySelector('.product-info__quantity-selector');
+    var customBtn = document.querySelector('.product-after-qty');
+    if (qtyInner && customBtn && customBtn.parentNode !== qtyInner) {
+      qtyInner.appendChild(customBtn);
+    }
+  }
+
+  // Run after DOM loads
+  document.addEventListener('DOMContentLoaded', function () {
+    moveButtonInsideQty();
+
+    // Keep checking a few times in case Shopify re-renders product info dynamically
+    var tries = 0;
+    var interval = setInterval(function () {
+      moveButtonInsideQty();
+      tries++;
+      if (tries > 20) clearInterval(interval); // stop after ~4 seconds
+    }, 200);
+  });
+})();
+</script>
+
+<style>
+.custom-after-qty-btn {
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px 20px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+.custom-after-qty-btn:hover {
+  background-color: #222;
+}
+</style>

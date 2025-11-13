@@ -1,0 +1,166 @@
+{% comment %}
+  Section: F80 Athlete Slider
+  Fixed: removed invalid attributes (min, max, step) from autoplay_interval
+{% endcomment %}
+
+<section id="shopify-section-{{ section.id }}" class="treadmill-f80-athlete-slider shopify-section">
+  <div class="pdp__benefits {% if section.settings.full_width %}container-full{% else %}pdp__container{% endif %}">
+    {% if section.settings.title != blank %}
+      <h2 class="pdp__section-title">{{ section.settings.title }}</h2>
+    {% endif %}
+
+    <div class="pdp__slider" data-slider="benefits"
+         data-autoplay="{{ section.settings.autoplay | json }}"
+         data-interval="{{ section.settings.autoplay_interval }}"
+         data-show-arrows="{{ section.settings.show_arrows | json }}"
+         data-show-dots="{{ section.settings.show_dots | json }}"
+         data-loop="{{ section.settings.loop | json }}"
+         aria-roledescription="carousel">
+
+      <div class="pdp__slider-wrapper">
+
+        <!-- Prev Arrow -->
+        <button class="pdp__slider-arrow pdp__slider-arrow--prev" aria-label="Previous slide" {% unless section.settings.show_arrows %}style="display:none"{% endunless %}>
+          <svg width="7" height="20" viewBox="0 0 7 20" aria-hidden="true">
+            <path d="M7 0L0 10L7 20" fill="currentColor"></path>
+          </svg>
+        </button>
+
+        <!-- Track -->
+        <div class="pdp__slider-track" role="list">
+
+          {% for block in section.blocks %}
+            <div class="pdp__slider-slide {% if forloop.first %}pdp__slider-slide--active{% endif %}"
+                 data-slide="{{ forloop.index0 }}"
+                 role="group"
+                 aria-roledescription="slide"
+                 aria-label="{{ forloop.index }} of {{ section.blocks.size }}">
+              <div class="pdp__slider-content">
+                <div class="pdp__slider-quote">
+                  {% if block.settings.quote != blank %}
+                    <p class="pdp__slider-text">{{ block.settings.quote }}</p>
+                  {% endif %}
+                  {% if block.settings.persona != blank %}
+                    <p class="pdp__slider-persona">{{ block.settings.persona }}</p>
+                  {% endif %}
+                </div>
+              </div>
+              <div class="pdp__slider-image">
+                {% if block.settings.image != blank %}
+                  <img src="{{ block.settings.image | img_url: '2048x' }}" alt="{{ block.settings.alt_text | escape }}" loading="lazy" decoding="async">
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+
+        </div>
+
+        <!-- Next Arrow -->
+        <button class="pdp__slider-arrow pdp__slider-arrow--next" aria-label="Next slide" {% unless section.settings.show_arrows %}style="display:none"{% endunless %}>
+          <svg width="7" height="20" viewBox="0 0 7 20" aria-hidden="true">
+            <path d="M7 0L0 10L7 20" fill="currentColor" transform="rotate(180 3.5 10)"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Dots -->
+      <div class="pdp__slider-dots" role="tablist" aria-label="Slide navigation" {% unless section.settings.show_dots %}style="display:none"{% endunless %}>
+        {% for block in section.blocks %}
+          <button class="pdp__slider-dot {% if forloop.first %}pdp__slider-dot--active{% endif %}"
+                  data-slide="{{ forloop.index0 }}"
+                  role="tab"
+                  aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+                  aria-label="Go to slide {{ forloop.index }}"></button>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "F80 Athlete Slider",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section title",
+      "default": "Designed For Every Athlete"
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Autoplay slides",
+      "default": true
+    },
+    {
+      "type": "number",
+      "id": "autoplay_interval",
+      "label": "Autoplay interval (ms)",
+      "default": 5000
+    },
+    {
+      "type": "checkbox",
+      "id": "show_arrows",
+      "label": "Show navigation arrows",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_dots",
+      "label": "Show pagination dots",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "loop",
+      "label": "Loop slides",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Stretch full width",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Slide image"
+        },
+        {
+          "type": "text",
+          "id": "alt_text",
+          "label": "Image alt text"
+        },
+        {
+          "type": "textarea",
+          "id": "quote",
+          "label": "Quote text",
+          "default": "\"Whisper-quiet motor won't wake the baby. Heavy frame absorbs vibration so neighbors stay happy.\""
+        },
+        {
+          "type": "text",
+          "id": "persona",
+          "label": "Persona / attribution",
+          "default": "Busy Parent & Apartment Dweller"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [
+    {
+      "name": "F80 Athlete Slider",
+      "category": "Product"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,166 @@
+{%- comment -%}
+  Section: F80 Content Freedom
+  File: sections/treadmill-f80-content-freedom.liquid
+  - Two-column content: text (heading, description, CTA) + image
+  - Admin settings:
+    - heading (text)
+    - description (richtext)
+    - button label & link
+    - image (image_picker) + alt text
+    - image_position (left|right)
+    - background color & full_width
+  Notes: removed empty-string defaults for url/color fields to satisfy Shopify schema validation.
+{%- endcomment -%}
+
+<section id="shopify-section-{{ section.id }}" class="treadmill-f80-content-freedom shopify-section pdp__content-freedom">
+  <div class="{% if section.settings.full_width %}container-full{% else %}pdp__container{% endif %}"
+       {% if section.settings.background_color != blank %}style="background: {{ section.settings.background_color }};"{% endif %} data-section-id="{{ section.id }}">
+
+    
+      {% assign img_on_left = false %}
+      {% if section.settings.image_position == 'left' %}
+        {% assign img_on_left = true %}
+      {% endif %}
+
+      {% if img_on_left %}
+        {%- comment -%} Image column left, text column right {%- endcomment -%}
+        <div class="pdp__content-freedom-image">
+          {% if section.settings.image != blank %}
+            <img src="{{ section.settings.image | img_url: '2048x' }}" alt="{{ section.settings.image_alt | escape }}" loading="lazy" decoding="async">
+          {% endif %}
+        </div>
+
+        <div class="pdp__content-freedom-text">
+          {% if section.settings.heading != blank %}
+            <h2 class="pdp__section-title">{{ section.settings.heading }}</h2>
+          {% endif %}
+
+          {% if section.settings.description != blank %}
+            <div class="pdp__content-freedom-description">{{ section.settings.description }}</div>
+          {% endif %}
+
+          {% if section.settings.button_label != blank %}
+            {% if section.settings.button_link != blank %}
+              <a href="{{ section.settings.button_link }}" class="pdp__learn-more-btn" {% if section.settings.button_target_blank %}target="_blank" rel="noopener noreferrer"{% endif %}>
+                {{ section.settings.button_label }}
+              </a>
+            {% else %}
+              <button type="button" class="pdp__learn-more-btn">{{ section.settings.button_label }}</button>
+            {% endif %}
+          {% endif %}
+        </div>
+
+      {% else %}
+        {%- comment -%} Text column left, image column right {%- endcomment -%}
+        <div class="pdp__content-freedom-text">
+          {% if section.settings.heading != blank %}
+            <h2 class="pdp__section-title">{{ section.settings.heading }}</h2>
+          {% endif %}
+
+          {% if section.settings.description != blank %}
+            <div class="pdp__content-freedom-description">{{ section.settings.description }}</div>
+          {% endif %}
+
+          {% if section.settings.button_label != blank %}
+            {% if section.settings.button_link != blank %}
+              <a href="{{ section.settings.button_link }}" class="pdp__learn-more-btn" {% if section.settings.button_target_blank %}target="_blank" rel="noopener noreferrer"{% endif %}>
+                {{ section.settings.button_label }}
+              </a>
+            {% else %}
+              <button type="button" class="pdp__learn-more-btn">{{ section.settings.button_label }}</button>
+            {% endif %}
+          {% endif %}
+        </div>
+
+        <div class="pdp__content-freedom-image">
+          {% if section.settings.image != blank %}
+            <img src="{{ section.settings.image | img_url: '2048x' }}" alt="{{ section.settings.image_alt | escape }}" loading="lazy" decoding="async">
+          {% endif %}
+        </div>
+      {% endif %}
+
+   
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "F80 Content Freedom",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "All Your Favorite Workouts & Shows – No Strings Attached"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Stream Netflix, Hulu, YouTube, or Spotify on the built-in HD screen — or mirror your phone to take live classes on Peloton, Zwift, Apple Fitness, and more. With SOLE, you decide how to train and what to watch.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Learn More"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "checkbox",
+      "id": "button_target_blank",
+      "label": "Open button link in new tab",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Right-side image"
+    },
+    {
+      "type": "text",
+      "id": "image_alt",
+      "label": "Image alt text",
+      "default": "SOLE F80 built-in screen showing streaming content"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image position",
+      "options": [
+        { "value": "right", "label": "Right (text on left)" },
+        { "value": "left", "label": "Left (text on right)" }
+      ],
+      "default": "right"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Stretch content full width",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": "F80 Content Freedom",
+      "category": "Product",
+      "settings": {
+        "heading": "All Your Favorite Workouts & Shows – No Strings Attached",
+        "description": "<p>Stream Netflix, Hulu, YouTube, or Spotify on the built-in HD screen — or mirror your phone to take live classes on Peloton, Zwift, Apple Fitness, and more. With SOLE, you decide how to train and what to watch.</p>",
+        "button_label": "Learn More",
+        "image_alt": "SOLE F80 built-in screen showing streaming content",
+        "image_position": "right"
+      }
+    }
+  ]
+}
+{% endschema %}

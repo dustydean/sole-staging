@@ -1,0 +1,187 @@
+{%- comment -%}
+  Section: Treadmill F80 — Feature + Testimonial (2-up)
+  File: sections/treadmill-f80-feature-testimonial.liquid
+  - Dynamic: Feature items are blocks (editable list)
+  - Testimonial content + background image editable via section settings
+  - Uses classes: .pdp__2up-row, .pdp__2up-card--text, .pdp__2up-card--testimonial, etc.
+{%- endcomment -%}
+
+<section id="shopify-section-{{ section.id }}" class="treadmill-f80-feature-testimonial shopify-section pdp__2up-section">
+  <div class="pdp__2up-row {% if section.settings.full_width %}container-full{% else %}pdp__container{% endif %}">
+
+    <!-- Left: Feature Text -->
+    <div class="pdp__2up-card pdp__2up-card--text">
+      {% if section.settings.title != blank %}
+        <h3 class="pdp__2up-title">{{ section.settings.title }}</h3>
+      {% endif %}
+
+      {% if section.blocks.size > 0 %}
+        <ul class="pdp__2up-list" aria-label="{{ section.settings.title | escape }}">
+          {% for block in section.blocks %}
+            <li class="pdp__2up-list-item">
+              {{ block.settings.item_text }}
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        {% if section.settings.feature_list_text != blank %}
+          <ul class="pdp__2up-list">
+            {% assign items = section.settings.feature_list_text | split: '||' %}
+            {% for item in items %}
+              <li class="pdp__2up-list-item">{{ item }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      {% endif %}
+
+      {% if section.settings.note != blank %}
+        <p class="pdp__2up-note">{{ section.settings.note }}</p>
+      {% endif %}
+    </div>
+
+    <!-- Right: Testimonial Card -->
+    <div class="pdp__2up-card pdp__2up-card--testimonial">
+      <div class="pdp__2up-bg"{% if section.settings.background_image != blank %} style="background-image: url('{{ section.settings.background_image | img_url: '2048x' }}');"{% endif %}></div>
+      <div class="pdp__2up-overlay" aria-hidden="true"></div>
+
+      <div class="pdp__2up-content">
+        {% if section.settings.quote != blank %}
+          <p class="pdp__2up-quote">“{{ section.settings.quote }}”</p>
+        {% endif %}
+
+        <div class="pdp__2up-attribution">
+          {% if section.settings.stars and section.settings.stars > 0 %}
+            <div class="pdp__2up-stars" aria-label="{{ section.settings.stars }} out of 5 stars">
+              {% assign stars = section.settings.stars | plus: 0 %}
+              {% for i in (1..5) %}
+                {% if i <= stars %}★{% else %}☆{% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
+
+          {% if section.settings.buyer_name != blank %}
+            <p class="pdp__2up-name">{{ section.settings.buyer_name }}</p>
+          {% endif %}
+
+          {% if section.settings.detail_line_1 != blank %}
+            <p class="pdp__2up-details"><strong>{{ section.settings.detail_label_1 }}</strong> {{ section.settings.detail_line_1 }}</p>
+          {% endif %}
+
+          {% if section.settings.detail_line_2 != blank %}
+            <p class="pdp__2up-details"><strong>{{ section.settings.detail_label_2 }}</strong> {{ section.settings.detail_line_2 }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "F80 Feature + Review",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Feature title",
+      "default": "Stability Under Load"
+    },
+    {
+      "type": "textarea",
+      "id": "feature_list_text",
+      "label": "Fallback feature list (pipe-separated, used if no blocks)",
+      "info": "Use || as separator between items. Example: 350 lb capacity||22\" × 60\" deck||0.5–12 mph, 0–15% incline",
+      "default": "350 lb capacity||22\" × 60\" deck||0.5–12 mph, 0–15% incline"
+    },
+    {
+      "type": "text",
+      "id": "note",
+      "label": "Note / description under list",
+      "default": "Firm, road-like deck = honest pacing for runners."
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Testimonial background image"
+    },
+    {
+      "type": "text",
+      "id": "quote",
+      "label": "Testimonial quote",
+      "default": "I'm 300+ lbs—belt stays steady at full speed. No wobble."
+    },
+    {
+      "type": "range",
+      "id": "stars",
+      "label": "Stars (1–5)",
+      "min": 0,
+      "max": 5,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "text",
+      "id": "buyer_name",
+      "label": "Buyer name / attribution",
+      "default": "Verified Buyer"
+    },
+    {
+      "type": "text",
+      "id": "detail_label_1",
+      "label": "Detail 1 label",
+      "default": "Floor support?"
+    },
+    {
+      "type": "text",
+      "id": "detail_line_1",
+      "label": "Detail 1 text",
+      "default": "Most floors handle it; use a mat if needed."
+    },
+    {
+      "type": "text",
+      "id": "detail_label_2",
+      "label": "Detail 2 label",
+      "default": "Cushioning feel?"
+    },
+    {
+      "type": "text",
+      "id": "detail_line_2",
+      "label": "Detail 2 text",
+      "default": "Firmer than soft decks, softer than road."
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Stretch full width",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature_item",
+      "name": "Feature item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "item_text",
+          "label": "Item text",
+          "default": "350 lb capacity"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    {
+      "name": "Treadmill F80 — Feature + Testimonial",
+      "category": "Product",
+      "blocks": [
+        { "type": "feature_item", "settings": { "item_text": "350 lb capacity" } },
+        { "type": "feature_item", "settings": { "item_text": "22\" × 60\" deck" } },
+        { "type": "feature_item", "settings": { "item_text": "0.5–12 mph, 0–15% incline" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

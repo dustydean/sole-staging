@@ -1,0 +1,185 @@
+{%- comment -%}
+  Section: F80 Product Specs
+  File: sections/treadmill-f80-specifications.liquid
+  - Dynamic accordion: each accordion item is a block (title + richtext content)
+  - Section settings:
+    - section title, intro text
+    - close_others (single-open) toggle
+    - open_first (auto open first item)
+    - enable_faq_schema (optional JSON-LD output)
+    - full_width option
+  - JS: scoped per section instance, uses data attributes to control behavior
+{%- endcomment -%}
+
+<section id="shopify-section-{{ section.id }}" class="treadmill-f80-specifications shopify-section pdp__specifications">
+  <div class="{% if section.settings.full_width %}container-full{% else %}pdp__container{% endif %}">
+
+    <div class="pdp__specs-intro">
+      {% if section.settings.title != blank %}
+        <h2 class="pdp__section-title">{{ section.settings.title }}</h2>
+      {% endif %}
+      {% if section.settings.description != blank %}
+        <p class="pdp__specs-description">{{ section.settings.description }}</p>
+      {% endif %}
+    </div>
+
+    <div class="pdp__accordion" role="region" aria-labelledby="pdp-specs-{{ section.id }}"
+         data-close-others="{{ section.settings.close_others | json }}"
+         data-open-first="{{ section.settings.open_first | json }}"
+         data-enable-faq="{{ section.settings.enable_faq_schema | json }}">
+
+      {%- for block in section.blocks -%}
+        {%- assign idx = forloop.index0 -%}
+        {%- assign panel_id = 'spec-panel-' | append: section.id | append: '-' | append: idx -%}
+        {%- assign btn_id   = 'spec-btn-'   | append: section.id | append: '-' | append: idx -%}
+
+        <div class="pdp__accordion-item">
+          <button id="{{ btn_id }}"
+                  class="pdp__accordion-trigger"
+                  aria-expanded="{% if section.settings.open_first and forloop.first %}true{% else %}false{% endif %}"
+                  aria-controls="{{ panel_id }}">
+            <span class="pdp__accordion-title">{{ block.settings.title }}</span>
+            <svg class="pdp__accordion-icon" width="7" height="4" viewBox="0 0 7 4" aria-hidden="true">
+              <path d="M3.5 4L0 0h7L3.5 4z" fill="currentColor"></path>
+            </svg>
+          </button>
+
+       <div id="{{ panel_id }}"
+               class="pdp__accordion-content"
+               role="region"
+               aria-labelledby="{{ btn_id }}"
+               {% unless section.settings.open_first and forloop.first %}hidden{% endunless %}>
+	
+  {%- assign block_content = block.settings.content -%}
+
+  {%- if block_content != blank -%}
+     <div class="pdp__accordion-body">  {{ block_content }}</div>
+  {%- elsif block.settings.content.value != blank -%}
+     <div class="pdp__accordion-body">  {{ block.settings.content.value }}</div>
+  {%- elsif block.settings.content.text != blank -%}
+     <div class="pdp__accordion-body">  {{ block.settings.content.text }}</div>
+  {%- else -%}
+    <div class="pdp__accordion-body">   <p>No content available for this section.</p></div>
+  {%- endif -%}
+</div>
+
+
+
+
+          
+        </div>
+
+
+
+
+
+
+
+
+      {%- endfor -%}
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "F80 Product Specs",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section title",
+      "default": "Product Specifications"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Intro / description",
+      "default": "<p>Please click on the following titles to find out the details of each important product specification. If there is anything else you would like to know, do not hesitate to contact us.</p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "close_others",
+      "label": "Close other panels when opening one (single-open)",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "open_first",
+      "label": "Open first panel by default",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_faq_schema",
+      "label": "Output FAQ structured data (JSON-LD)",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Stretch full width",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "spec_item",
+      "name": "Specification item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Item title",
+          "default": "Controls & Features"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Item content (rich text)",
+          "default": "<p>[Controls & Features specifications content]</p>"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 30,
+  "presets": [
+    {
+      "name": "F80 Product Specs",
+      "category": "Product",
+      "blocks": [
+        {
+          "type": "spec_item",
+          "settings": {
+            "title": "Controls & Features",
+            "content": "<p>[Controls & Features specifications content]</p>"
+          }
+        },
+        {
+          "type": "spec_item",
+          "settings": {
+            "title": "Machine Dimensions",
+            "content": "<p>[Machine Dimensions specifications content]</p>"
+          }
+        },
+        {
+          "type": "spec_item",
+          "settings": {
+            "title": "Warranty",
+            "content": "<p>[Warranty specifications content]</p>"
+          }
+        },
+        {
+          "type": "spec_item",
+          "settings": {
+            "title": "Magnetic Fields May Interfere With Implanted Medical Devices",
+            "content": "<p>[Magnetic field warning content]</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+

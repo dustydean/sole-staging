@@ -1,0 +1,96 @@
+<div class="pdp__icon-features" style="background-color: {{ section.settings.background_color }};">
+  <div class="pdp__container">
+    {% if section.settings.title != blank %}
+      <h2 class="pdp__section-title">{{ section.settings.title }}</h2>
+    {% endif %}
+    <div class="pdp__icon-grid grid--{{ section.settings.columns }}">
+      {% for block in section.blocks %}
+        <div class="pdp__icon-item" {{ block.shopify_attributes }}>
+          {% if block.settings.icon != blank %}
+            <img src="{{ block.settings.icon | image_url }}" alt="{{ block.settings.icon_alt | escape }}" class="pdp__icon" loading="lazy" decoding="async">
+          {% endif %}
+          {% if block.settings.title != blank %}
+            <h3 class="pdp__icon-title">{{ block.settings.title }}</h3>
+          {% endif %}
+          {% if block.settings.text != blank %}
+            <p class="pdp__icon-text">{{ block.settings.text }}</p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "F80 Feature Icons",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Heading",
+      "default": "Key Features That Set the F80 Apart"
+    },
+    {
+      "type": "select",
+      "id": "columns",
+      "label": "Number of Columns",
+      "default": "4",
+      "options": [
+        { "value": "2", "label": "2 Columns" },
+        { "value": "3", "label": "3 Columns" },
+        { "value": "4", "label": "4 Columns" }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Make Section Full Width",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature Icon",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon Image"
+        },
+        {
+          "type": "text",
+          "id": "icon_alt",
+          "label": "Alt Text",
+          "default": "Feature Icon"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Feature Title",
+          "default": "Feature Title"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Feature Description",
+          "default": "Feature description text here."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "F80 Feature Icons",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}
