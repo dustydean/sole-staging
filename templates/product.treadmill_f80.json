@@ -711,6 +711,19 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "custom_liquid_xLi7ea": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<script>\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n\n  function forceVideoAsFirstAndSelected() {\n    const list = document.querySelector('.product-gallery__thumbnail-list');\n    if (!list) return;\n\n    const thumbs = list.querySelectorAll('.product-gallery__thumbnail');\n    if (!thumbs.length) return;\n\n    let videoThumb = null;\n\n    // Find thumbnail that contains the video badge\n    thumbs.forEach(btn => {\n      if (btn.querySelector('.product-gallery__media-badge')) {\n        videoThumb = btn;\n      }\n    });\n\n    if (videoThumb) {\n      // 1. Move video thumbnail to the top\n      if (list.firstElementChild !== videoThumb) {\n        list.prepend(videoThumb);\n      }\n\n      // 2. Make video thumbnail \"selected\"\n      thumbs.forEach(t => t.classList.remove('is-selected'));\n      videoThumb.classList.add('is-selected');\n\n      // 3. Trigger click on video thumbnail → forces gallery to change slide\n      videoThumb.click();\n\n      console.log(\"Video thumbnail moved + selected ✔\");\n    }\n  }\n\n  // Run at different times because Impact loads dynamically\n  setTimeout(forceVideoAsFirstAndSelected, 400);\n  setTimeout(forceVideoAsFirstAndSelected, 900);\n  setTimeout(forceVideoAsFirstAndSelected, 1500);\n\n  document.addEventListener('shopify:section:load', forceVideoAsFirstAndSelected);\n});\n</script>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
@@ -726,6 +739,7 @@
     "product_specs",
     "resellerratings_reviews",
     "custom_liquid_Qxgcmn",
-    "custom_liquid_VkJypp"
+    "custom_liquid_VkJypp",
+    "custom_liquid_xLi7ea"
   ]
 }
