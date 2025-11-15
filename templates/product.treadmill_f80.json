@@ -157,9 +157,9 @@
           "settings": {
             "brand_logo": "shopify://shop_images/peloton.png",
             "brand_name": "Brand",
-            "year_1": "$528",
-            "year_2": "$1,056",
-            "year_3": "$1,584",
+            "year_1": "$599",
+            "year_2": "$1199",
+            "year_3": "$1799",
             "highlight": false
           }
         }
@@ -171,11 +171,11 @@
       ],
       "settings": {
         "heading": "Everything Works From Day One – <span>No Lock-Ins</span>",
-        "text": "With SOLE, you own the treadmill — not a subscription. Every workout, every app, and every feature works from day one. Competing treadmills can cost $39–$44/month just to unlock features — that's up to $1,584 saved in three years.",
+        "text": "With SOLE, you own the treadmill — not a subscription. Every workout, every app, and every feature works from day one. Competing treadmills can cost $39–$49/month just to unlock features — that's up to $1,799 saved in three years.",
         "year_label_1": "Year 1",
         "year_label_2": "Year 2",
         "year_label_3": "Year 3",
-        "disclaimer": "*Prices verified on manufacturer websites on Sept 18, 2025. NordicTrack iFIT membership ~$39/month billed annually. Peloton All-Access membership ~$44/month. Prices subject to change without notice.",
+        "disclaimer": "*Prices verified on manufacturer websites on Nov 15, 2025. NordicTrack iFIT membership ~$39/month billed annually. Peloton All-Access membership ~$49/month. Prices subject to change without notice.",
         "full_width": false
       }
     },
