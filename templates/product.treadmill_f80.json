@@ -146,9 +146,9 @@
           "settings": {
             "brand_logo": "shopify://shop_images/nordictrack.png",
             "brand_name": "Brand",
-            "year_1": "$480",
-            "year_2": "$960",
-            "year_3": "$1440",
+            "year_1": "$468",
+            "year_2": "$936",
+            "year_3": "$1404",
             "highlight": false
           }
         },
