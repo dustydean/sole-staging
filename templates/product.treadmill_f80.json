@@ -194,9 +194,9 @@
         "slide_P9dkgP": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/persona-serious-runner.jpg",
+            "image": "shopify://shop_images/seriousrunner.webp",
             "alt_text": "",
-            "quote": "\"Road-like firmness for honest pacing. 0.5–12 MPH with 0–15% incline. The deck doesn't wobble at top speed—this is a serious training tool.\"",
+            "quote": "\"Road-like firmness for honest pacing. 0.5–12 MPH with 0–15% incline. The deck doesn't wobble even at top speed—this is a serious training tool.\"",
             "persona": "Serious Runner"
           }
         },
