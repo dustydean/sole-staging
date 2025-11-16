@@ -45,7 +45,7 @@
     "product_color_display": "variant",
     "product_image_aspect_ratio": "short",
     "product_info_alignment": "center",
-    "cart_type": "page",
+    "cart_type": "drawer",
     "cart_icon": "shopping_cart",
     "cart_empty_button_link": "shopify://collections/best-deals",
     "social_facebook": "https://www.facebook.com/SoleTreadmills",
