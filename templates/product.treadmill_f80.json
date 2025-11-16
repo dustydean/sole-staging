@@ -411,6 +411,19 @@
             "icon": "shopify://shop_images/spec-price_05e72dbf-486c-4d9b-9115-6d9014016217.svg",
             "icon_alt": "Price icon",
             "feature": "CURRENT PRICE",
+            "sole_value": "$1,799.99",
+            "sole_subvalue": "",
+            "comp1_value": "$1,999",
+            "comp1_subvalue": "",
+            "comp2_value": "$2,795",
+            "comp2_subvalue": ""
+          }
+        },
+        "feature_Yd4rrm": {
+          "type": "feature",
+          "settings": {
+            "icon_alt": "Feature icon",
+            "feature": "CURRENT PRICE",
             "sole_value": "$1,899",
             "sole_subvalue": "",
             "comp1_value": "$2,499",
@@ -427,7 +440,7 @@
             "feature": "MEMBERSHIP NEEDED FOR FEATURES",
             "sole_value": "NO",
             "sole_subvalue": "",
-            "comp1_value": "Yes (iFit Pro)",
+            "comp1_value": "Yes (iFit )",
             "comp1_subvalue": "",
             "comp2_value": "YES (ALL-ACCESS)",
             "comp2_subvalue": ""
@@ -443,7 +456,7 @@
             "sole_subvalue": "",
             "comp1_value": "~$1,404",
             "comp1_subvalue": "",
-            "comp2_value": "~$1,584",
+            "comp2_value": "~$1,799",
             "comp2_subvalue": ""
           }
         },
@@ -534,6 +547,7 @@
       },
       "block_order": [
         "feature_price",
+        "feature_Yd4rrm",
         "feature_membership",
         "feature_3year",
         "feature_warranty",
@@ -550,7 +564,7 @@
         "competitor_1_label": "NordicTrack 1750",
         "competitor_2_label": "Peloton Tread",
         "highlight_column": "sole",
-        "disclaimer": "*Prices verified on manufacturer websites on Sept 18, 2025; subject to change without notice.",
+        "disclaimer": "*Prices verified on manufacturer websites on Nov 15, 2025; subject to change without notice.",
         "background_color": "",
         "full_width": false
       }
@@ -602,15 +616,6 @@
             "review_author": "Jennifer K.",
             "rating": "5"
           }
-        },
-        "review_GwBFTp": {
-          "type": "review",
-          "settings": {
-            "review_title": "test",
-            "review_text": "<p>testtttt</p>",
-            "review_author": "tarak",
-            "rating": "3"
-          }
         }
       },
       "block_order": [
@@ -618,8 +623,7 @@
         "review_2",
         "review_3",
         "review_4",
-        "review_5",
-        "review_GwBFTp"
+        "review_5"
       ],
       "settings": {
         "title": "",
