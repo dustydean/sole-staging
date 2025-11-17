@@ -40,7 +40,7 @@
       }
     },
     "main": {
-      "type": "buy_button_treadmills_NoReviews",
+      "type": "main-product-buy_button_treadmills_NoReviews",
       "blocks": {
         "vendor": {
           "type": "vendor",
