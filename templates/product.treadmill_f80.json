@@ -217,23 +217,13 @@
             "quote": "\"Built-in HD screen streams Netflix, Hulu, YouTube. Mirror your phone for Peloton, Zwift, Apple Fitness+. You choose what to watch and how to train—zero subscriptions, total freedom.\"",
             "persona": "Tech-Savvy User"
           }
-        },
-        "slide_DA4f3F": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/multiuser.webp",
-            "alt_text": "",
-            "quote": "\"My partner power-walks at dawn, I train for marathons at lunch, teens use it after school. One machine, three fitness levels, zero subscription fees. Everyone gets exactly what they need.\"",
-            "persona": "Multi-Household Family"
-          }
         }
       },
       "block_order": [
         "slide_xgahzz",
         "slide_P9dkgP",
         "slide_Fnh3cd",
-        "slide_jPB4w7",
-        "slide_DA4f3F"
+        "slide_jPB4w7"
       ],
       "custom_css": [
         ".pdp__section-title {text-align: center;}"
