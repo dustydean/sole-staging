@@ -1,0 +1,52 @@
+<div class="custom-free-shipping" id="free-shipping-f80">
+  Free Shipping
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const badge = document.getElementById("free-shipping-f80");
+  if (!badge) return;
+
+  // Select PRICE block container
+  const priceBlockItem = document.querySelector(
+    '.product-info__block-item[data-block-id="price"]'
+  );
+
+  // Select PRICE inner div (where we insert after)
+  const priceInner = document.querySelector(
+    '.product-info__block-item[data-block-id="price"] .product-info__price'
+  );
+
+  // Move badge under price
+  if (priceInner) {
+    priceInner.insertAdjacentElement("afterend", badge);
+  }
+
+  // Add custom class to price block container
+  if (priceBlockItem) {
+    priceBlockItem.classList.add("withfreeshipping_badge");
+  }
+});
+</script>
+
+
+<style type="text/css">
+.product-info__block-item .custom-free-shipping{
+background: #fc5;
+  display: inline-block;
+  font-family: 'Barlow Condensed';
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #7a001a;
+  padding: 0px 10px;
+  border-radius: 10px;
+}
+
+	
+.product-info__block-item.withfreeshipping_badge {
+display: flex !important;
+    align-items: center;
+	gap: 10px;}
+	
+</style>
