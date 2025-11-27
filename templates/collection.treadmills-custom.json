@@ -172,7 +172,7 @@
         "template--21444391371055__d392f384-505b-499a-99dc-00ee7f39baa6-richtext-1"
       ],
       "custom_css": [
-        "@media (max-width: 600px) {.rich-text__wrapper P:last-child {display: none; }}"
+        "@media (max-width: 600px) {.rich-text__wrapper {display: none; }}"
       ],
       "settings": {
         "full_width": true,
