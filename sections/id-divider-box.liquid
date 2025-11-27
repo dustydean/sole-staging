@@ -1,0 +1,58 @@
+<!-- sections/divider-box.liquid -->
+<div
+  class="id-divider-box"
+  id="{{ section.settings.custom_id | escape }}"
+  style="
+    height: {{ section.settings.height }}px;
+      margin-top: {{ section.settings.margin_top }}px;
+    margin-bottom: {{ section.settings.margin_bottom }}px;
+    width: 100%;
+  "
+></div>
+
+{% schema %}
+{
+  "name": "Divider ID Box",
+  "settings": [
+    {
+      "type": "text",
+      "id": "custom_id",
+      "label": "Custom ID (optional)",
+      "default": "custom-divider"
+    },
+    {
+      "type": "range",
+      "id": "height",
+      "label": "Divider height",
+      "min": 1,
+      "max": 20,
+      "step": 1,
+      "default": 1
+    },
+  
+    {
+      "type": "range",
+      "id": "margin_top",
+      "label": "Top spacing",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "label": "Bottom spacing",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Divider ID Box"
+    }
+  ]
+}
+{% endschema %}
