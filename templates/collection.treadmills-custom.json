@@ -1,0 +1,1041 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-collection-treadmills-custom",
+      "settings": {
+        "products_per_page": 24,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "filter_layout": "drawer",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_first_filter_group": false
+      }
+    },
+    "banner": {
+      "type": "collection-banner",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": true,
+        "show_collection_title": true,
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "collection_title_size": "h0",
+        "image_size": "auto",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "featured_product": "",
+        "featured_product_heading": "Featured product",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "e11e3c3f-7513-459c-971e-5e93b5584109": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--21444391371055__e11e3c3f-7513-459c-971e-5e93b5584109-subheading-1": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "SOLE"
+          }
+        },
+        "template--21444391371055__e11e3c3f-7513-459c-971e-5e93b5584109-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Treadmills",
+            "heading_tag": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "template--21444391371055__e11e3c3f-7513-459c-971e-5e93b5584109-subheading-1",
+        "template--21444391371055__e11e3c3f-7513-459c-971e-5e93b5584109-heading-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#f0f0f0",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "image_with_text_overlay_zgwPiy": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_7KLERb": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_rxtHWk": {
+          "type": "heading",
+          "settings": {
+            "text": "Treadmills",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_7yBcjH": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_7KLERb",
+        "heading_rxtHWk",
+        "richtext_7yBcjH"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "featured_collection_EjUKjN": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "collection": "treadmills",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_count": 10,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "d392f384-505b-499a-99dc-00ee7f39baa6": {
+      "type": "rich-text",
+      "blocks": {
+        "7db6f238-2b0b-4b08-8f04-f3ec12475554": {
+          "type": "heading",
+          "settings": {
+            "text": "Treadmills Built for Your Home",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--21444391371055__d392f384-505b-499a-99dc-00ee7f39baa6-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Durable, quiet, and built to last — from daily walks to serious training, Sole treadmills deliver gym-quality performance right in your home.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "7db6f238-2b0b-4b08-8f04-f3ec12475554",
+        "template--21444391371055__d392f384-505b-499a-99dc-00ee7f39baa6-richtext-1"
+      ],
+      "custom_css": [
+        "@media (max-width:600px) {.rich-text__wrapper P:last-child{display:none;}}"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "treadmills_category_custom_HnHKX9": {
+      "type": "treadmills-category-custom",
+      "blocks": {
+        "category_gUeL4r": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/SOLE-F80-20230329-9253_Updated_ea138733-1c89-468b-b601-f9977f0d3a46.jpg",
+            "image_alt": "",
+            "title": "Category Name",
+            "link": "#cat001"
+          }
+        },
+        "category_NR7ijz": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/SOLE-F80-20230329-9235_f58a7bc3-50db-4c94-8f16-79a9fdf2f446.jpg",
+            "image_alt": "",
+            "title": "Category Name",
+            "link": "#cat002"
+          }
+        },
+        "category_UVmAEm": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/SOLE-F80-20230329-9263_0ee9afd8-e13b-41e4-943f-7d4e185b5bca.jpg",
+            "image_alt": "",
+            "title": "Category Name",
+            "link": "#cat003"
+          }
+        }
+      },
+      "block_order": [
+        "category_gUeL4r",
+        "category_NR7ijz",
+        "category_UVmAEm"
+      ],
+      "name": "Treadmills category (Custom)",
+      "settings": {
+        "title": "",
+        "background_color": "#f0f0f0"
+      }
+    },
+    "f85-promo-banner": {
+      "type": "rich-text",
+      "blocks": {
+        "promo-heading": {
+          "type": "heading",
+          "settings": {
+            "text": "SOLE Midnight Miles: $100 Off F63 — Ends Oct 26",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "promo-link": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><a href=\"/products/sole-f63\" title=\"Shop F63 Treadmill\"><strong>Shop F63 Today →</strong></a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "promo-heading",
+        "promo-link"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#e8e8e8",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "id_divider_box_G3JzUM": {
+      "type": "id-divider-box",
+      "name": "Divider Box",
+      "settings": {
+        "custom_id": "cat001",
+        "height": 1,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "ac9033fc-b772-4e10-8e5f-ca1911bca743": {
+      "type": "rich-text",
+      "blocks": {
+        "f3ec3479-9f18-4dca-ac79-083376efa7f4": {
+          "type": "heading",
+          "settings": {
+            "text": "F8X Treadmills Series",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "8fe8d1ff-af4a-4b7a-971a-54c6604e2ba3": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Performance and tech for runners and households that need more stability and features.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "f3ec3479-9f18-4dca-ac79-083376efa7f4",
+        "8fe8d1ff-af4a-4b7a-971a-54c6604e2ba3"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "f3d8655f-c27e-473b-a63f-81893fd6d97b": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "",
+        "products": [
+          "sole-f80",
+          "sole-f85",
+          "sole-f89"
+        ],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 3,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "abd8e554-7d82-4898-8fdd-6e48dde5d2f6": {
+      "type": "feature-chart",
+      "blocks": {
+        "56231bcf-e477-4aa1-859e-c355ba0ed025": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Display",
+            "heading_2": "Decline",
+            "heading_3": "Weight Capacity ",
+            "heading_4": "Roller Size ",
+            "heading_5": "",
+            "heading_6": "",
+            "heading_7": "",
+            "heading_8": "",
+            "heading_9": "",
+            "heading_10": "",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "26c22f3b-4f5c-480c-a771-858bf68658ea": {
+          "type": "values",
+          "settings": {
+            "product": "sole-f80",
+            "value_1": "<p>10.1\" Touchscreen</p>",
+            "value_2": "<p>N/A</p>",
+            "value_3": "<p>350 lbs.</p>",
+            "value_4": "<p>2.36\"</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "ecaa5ac2-e545-470f-be57-2bbb31d6f74b": {
+          "type": "values",
+          "settings": {
+            "product": "sole-f85",
+            "value_1": "<p>15.6\" Touchscreen</p>",
+            "value_2": "<p>6 Levels</p>",
+            "value_3": "<p>375 lbs.</p>",
+            "value_4": "<p>2.75\"</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "5161b440-20f7-4ac7-b457-6b8e79cdf46b": {
+          "type": "values",
+          "settings": {
+            "product": "sole-f89",
+            "value_1": "<p>21.5\" Touchscreen</p>",
+            "value_2": "<p>6 Levels</p>",
+            "value_3": "<p>375 lbs.</p>",
+            "value_4": "<p>2.75\"</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "56231bcf-e477-4aa1-859e-c355ba0ed025",
+        "26c22f3b-4f5c-480c-a771-858bf68658ea",
+        "ecaa5ac2-e545-470f-be57-2bbb31d6f74b",
+        "5161b440-20f7-4ac7-b457-6b8e79cdf46b"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Comparing the F8X Treadmills",
+        "content": "<p>For full specifications, see each product individually. Below are the most significant differences for a quick comparison.</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "",
+        "viewing_product": "",
+        "show_product_swatch": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "id_divider_box_h6RYtL": {
+      "type": "id-divider-box",
+      "name": "Divider Box",
+      "settings": {
+        "custom_id": "cat002",
+        "height": 1,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "6c93c573-e5e0-4c96-845d-39495aab94ef": {
+      "type": "rich-text",
+      "blocks": {
+        "bb2d5bdb-0655-4be5-b413-20adea7de605": {
+          "type": "heading",
+          "settings": {
+            "text": "F6X Treadmills Series",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "135533e3-f2bf-4a2b-b4fd-7b76669fa78a": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Best value for everyday fitness—smooth, durable, and foldable.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "bb2d5bdb-0655-4be5-b413-20adea7de605",
+        "135533e3-f2bf-4a2b-b4fd-7b76669fa78a"
+      ],
+      "custom_css": [],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "db06c0b2-bd02-4a1f-8619-fd63bcd30d5e": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "",
+        "products": [
+          "sole-f63",
+          "sole-f65"
+        ],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 2,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 2,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "b7178c0b-ea6d-4d88-ab73-5ed649a85ba4": {
+      "type": "feature-chart",
+      "blocks": {
+        "template--21812144177455__b7178c0b-ea6d-4d88-ab73-5ed649a85ba4-headings-1": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Display",
+            "heading_2": "Speed/Incline Adjustments",
+            "heading_3": "Running Surface ",
+            "heading_4": "Folding Mechanism ",
+            "heading_5": "",
+            "heading_6": "",
+            "heading_7": "",
+            "heading_8": "",
+            "heading_9": "",
+            "heading_10": "",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "template--21812144177455__b7178c0b-ea6d-4d88-ab73-5ed649a85ba4-values-1": {
+          "type": "values",
+          "settings": {
+            "product": "sole-f63",
+            "value_1": "<p>6.5\" Backlit LCD</p>",
+            "value_2": "<p>Console</p>",
+            "value_3": "<p>20\" x 60\"</p>",
+            "value_4": "<p>Kick Release</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "template--21812144177455__b7178c0b-ea6d-4d88-ab73-5ed649a85ba4-values-2": {
+          "type": "values",
+          "settings": {
+            "product": "sole-f65",
+            "value_1": "<p>9\" Backlit LCD</p>",
+            "value_2": "<p>Console, Handrails</p>",
+            "value_3": "<p>22\" x 60\"</p>",
+            "value_4": "<p>Release Lever</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21812144177455__b7178c0b-ea6d-4d88-ab73-5ed649a85ba4-headings-1",
+        "template--21812144177455__b7178c0b-ea6d-4d88-ab73-5ed649a85ba4-values-1",
+        "template--21812144177455__b7178c0b-ea6d-4d88-ab73-5ed649a85ba4-values-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Comparing the F6X Treadmills",
+        "content": "<p>For full specifications, see each product individually. Below are the most significant differences for a quick comparison.</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "",
+        "viewing_product": "",
+        "show_product_swatch": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "id_divider_box_kaYM7E": {
+      "type": "id-divider-box",
+      "name": "Divider Box",
+      "settings": {
+        "custom_id": "cat003",
+        "height": 1,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "65a79559-788a-4d32-ac99-767dc39ffd7f": {
+      "type": "rich-text",
+      "blocks": {
+        "50dd0431-0aac-4af1-b725-18c962d4b601": {
+          "type": "heading",
+          "settings": {
+            "text": "SOLE Non-Folding Treadmills Series",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "fd350897-0eaa-4cdc-98b2-c082af04a04a": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Commercial-style builds—slat belt (ST90) or incline + decline (TT8).</p>"
+          }
+        }
+      },
+      "block_order": [
+        "50dd0431-0aac-4af1-b725-18c962d4b601",
+        "fd350897-0eaa-4cdc-98b2-c082af04a04a"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "3a52bea2-4110-4cce-bf98-0fa19a0b4c1d": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "",
+        "products": [
+          "sole-st90",
+          "sole-tt8"
+        ],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 2,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 2,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "e8e35f19-e8db-498c-8aa9-f0bf276571c2": {
+      "type": "feature-chart",
+      "blocks": {
+        "0bdec13d-ac12-48de-bfce-eb1309291ab9": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Decline",
+            "heading_2": "Running Surface",
+            "heading_3": "Roller Size ",
+            "heading_4": "Light Commercial Warranty ",
+            "heading_5": "Running Surface Material",
+            "heading_6": "",
+            "heading_7": "",
+            "heading_8": "",
+            "heading_9": "",
+            "heading_10": "",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "7b22390b-05f0-4e9f-9872-7d4e09d75d74": {
+          "type": "values",
+          "settings": {
+            "product": "sole-st90",
+            "value_1": "<p>N/A</p>",
+            "value_2": "<p>20\" x 60\"</p>",
+            "value_3": "<p>7.44\"</p>",
+            "value_4": "<p>No, residential only</p>",
+            "value_5": "<p>Innovative, Slat Belt Design</p>",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "4934ee4e-3fd1-4da2-9b38-fa181afa08e6": {
+          "type": "values",
+          "settings": {
+            "product": "sole-tt8",
+            "value_1": "<p>6 Levels</p>",
+            "value_2": "<p>22\" x 60\"</p>",
+            "value_3": "<p>3\"</p>",
+            "value_4": "<p>Yes, 2 years parts, 1 year labor, Lifetime frame/motor</p>",
+            "value_5": "<p>Traditional, Sturdy Belt</p>",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "0bdec13d-ac12-48de-bfce-eb1309291ab9",
+        "7b22390b-05f0-4e9f-9872-7d4e09d75d74",
+        "4934ee4e-3fd1-4da2-9b38-fa181afa08e6"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Comparing the Non-Folding Treadmills Series",
+        "content": "<p>For full specifications, see each product individually. Below are the most significant differences for a quick comparison.</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "max_rows": 6,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "",
+        "viewing_product": "",
+        "show_product_swatch": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "5d36c499-7288-4ef3-bd65-a8e832ee1a0a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21812144177455__5d36c499-7288-4ef3-bd65-a8e832ee1a0a-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "The SOLE+ Advantage",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--21812144177455__5d36c499-7288-4ef3-bd65-a8e832ee1a0a-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We also offer FREE online fitness classes to every one of our customers.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21812144177455__5d36c499-7288-4ef3-bd65-a8e832ee1a0a-heading-1",
+        "template--21812144177455__5d36c499-7288-4ef3-bd65-a8e832ee1a0a-richtext-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "d413c24c-5388-49ce-bb22-49bd08928945": {
+      "type": "slideshow",
+      "blocks": {
+        "template--21812144177455__d413c24c-5388-49ce-bb22-49bd08928945-image-1": {
+          "type": "image",
+          "settings": {
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "WITH OUR SOLE+ APP YOU CAN ACCESS THOUSANDS OF FREE WORKOUT CLASSES",
+            "heading_tag": "h2",
+            "button_text": "CHECK OUT THE BENEFITS",
+            "button_link": "shopify://pages/sole",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21812144177455__d413c24c-5388-49ce-bb22-49bd08928945-image-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "show_initial_transition": false,
+        "image_size": "auto",
+        "controls_type": "outline_arrows",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
+    "f22dcb8e-ce0e-4a57-8480-87b43789813f": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--21812144177455__f22dcb8e-ce0e-4a57-8480-87b43789813f-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "The SOLE Experience"
+          }
+        },
+        "template--21812144177455__f22dcb8e-ce0e-4a57-8480-87b43789813f-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Enjoy Complimentary Curbside Shipping with Every SOLE Order!",
+            "heading_tag": "h1"
+          }
+        },
+        "template--21812144177455__f22dcb8e-ce0e-4a57-8480-87b43789813f-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Never worry about having to pay for shipping with SOLE. All our products ship for FREE with our Curbside Delivery option. <br/><em>Restrictions Apply. See our Shipping Policies page. </em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21812144177455__f22dcb8e-ce0e-4a57-8480-87b43789813f-subheading-1",
+        "template--21812144177455__f22dcb8e-ce0e-4a57-8480-87b43789813f-heading-1",
+        "template--21812144177455__f22dcb8e-ce0e-4a57-8480-87b43789813f-richtext-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": true,
+        "image_size": "sm",
+        "mobile_text_position": "place-self-center-start text-start",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 40
+      }
+    },
+    "771580e6-772d-463f-aeb9-1ee20975ca7a": {
+      "type": "faq",
+      "blocks": {
+        "template--21812144177455__771580e6-772d-463f-aeb9-1ee20975ca7a-item-1": {
+          "type": "item",
+          "settings": {
+            "title": "Explore Our Range of Best Rated Treadmills",
+            "content": "<p>Dive into our diverse collection and discover why our treadmills are consistently rated as some of the best in the market. Each treadmill is crafted to provide an unparalleled exercise experience, featuring robust motors, intuitive controls, and cushioned running surfaces for maximum impact absorption.</p>"
+          }
+        },
+        "template--21812144177455__771580e6-772d-463f-aeb9-1ee20975ca7a-item-2": {
+          "type": "item",
+          "settings": {
+            "title": "Customer Reviews: Hear from Our Satisfied Users",
+            "content": "<p>Don't just take our word for it. Read through the experiences of countless satisfied customers who have transformed their fitness routines with our treadmills. Their stories are a testament to our commitment to quality and customer satisfaction.</p>"
+          }
+        },
+        "template--21812144177455__771580e6-772d-463f-aeb9-1ee20975ca7a-item-3": {
+          "type": "item",
+          "settings": {
+            "title": "Frequently Asked Questions",
+            "content": "<p>Have questions? We've got answers. Check out our <a href=\"/pages/faq\" title=\"Frequently Asked Questions\">FAQ section</a> where we address common queries about treadmill maintenance, warranty, delivery, and more.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21812144177455__771580e6-772d-463f-aeb9-1ee20975ca7a-item-1",
+        "template--21812144177455__771580e6-772d-463f-aeb9-1ee20975ca7a-item-2",
+        "template--21812144177455__771580e6-772d-463f-aeb9-1ee20975ca7a-item-3"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "SOLE",
+        "title": "EXPLORE, REVIEWS, AND FAQ",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "banner",
+    "e11e3c3f-7513-459c-971e-5e93b5584109",
+    "image_with_text_overlay_zgwPiy",
+    "featured_collection_EjUKjN",
+    "d392f384-505b-499a-99dc-00ee7f39baa6",
+    "treadmills_category_custom_HnHKX9",
+    "f85-promo-banner",
+    "id_divider_box_G3JzUM",
+    "ac9033fc-b772-4e10-8e5f-ca1911bca743",
+    "f3d8655f-c27e-473b-a63f-81893fd6d97b",
+    "abd8e554-7d82-4898-8fdd-6e48dde5d2f6",
+    "id_divider_box_h6RYtL",
+    "6c93c573-e5e0-4c96-845d-39495aab94ef",
+    "db06c0b2-bd02-4a1f-8619-fd63bcd30d5e",
+    "b7178c0b-ea6d-4d88-ab73-5ed649a85ba4",
+    "id_divider_box_kaYM7E",
+    "65a79559-788a-4d32-ac99-767dc39ffd7f",
+    "3a52bea2-4110-4cce-bf98-0fa19a0b4c1d",
+    "e8e35f19-e8db-498c-8aa9-f0bf276571c2",
+    "5d36c499-7288-4ef3-bd65-a8e832ee1a0a",
+    "d413c24c-5388-49ce-bb22-49bd08928945",
+    "f22dcb8e-ce0e-4a57-8480-87b43789813f",
+    "771580e6-772d-463f-aeb9-1ee20975ca7a"
+  ]
+}
