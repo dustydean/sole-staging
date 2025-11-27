@@ -58,6 +58,9 @@
         "message_kkJUyw",
         "message_Mg7XNr"
       ],
+      "custom_css": [
+        "@media (max-width: 600px) {.announcement-bar__static-list p {display: none; } .announcement-bar__static-list p.is-selected {display: block; } .announcement-bar button.tap-area {display: none; } .announcement-bar__wrapper {justify-content: center !important; text-align: center !important; }}"
+      ],
       "settings": {
         "enable_sticky": true,
         "navigation_mode": "arrows",
