@@ -172,7 +172,7 @@
         "template--21444391371055__d392f384-505b-499a-99dc-00ee7f39baa6-richtext-1"
       ],
       "custom_css": [
-        "@media (max-width:600px) {.rich-text__wrapper P:last-child{display:none;}}"
+        "@media (max-width: 600px) {.rich-text__wrapper P:last-child {display: none; }}"
       ],
       "settings": {
         "full_width": true,
@@ -191,7 +191,7 @@
           "settings": {
             "image": "shopify://shop_images/SOLE-F80-20230329-9253_Updated_ea138733-1c89-468b-b601-f9977f0d3a46.jpg",
             "image_alt": "",
-            "title": "Category Name",
+            "title": "F8X Treadmills Series",
             "link": "#cat001"
           }
         },
