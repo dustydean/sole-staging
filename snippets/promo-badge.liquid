@@ -1,18 +1,18 @@
 {%- comment -%}
-  Free Shipping Badge
-  Controlled by product metafield: custom.free_shipping_badge (True/False)
+  Promo Badge
+  Controlled by product metafield: custom.promo_badge (True/False)
 {%- endcomment -%}
 
-{%- if product.metafields.custom.free_shipping_badge == true -%}
-<div class="custom-free-shipping" id="free-shipping-f80">
-   <span class="freeshipping-text">Free Shipping</span>
+{%- if product.metafields.custom.promo_badge == true -%}
+<div class="promo-badge-item" id="promo-badge-f80">
+   <span class="promo-badge-text">Cyber Week Deal</span>
 </div>
 {%- endif -%}
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const badge = document.getElementById("free-shipping-f80");
-  if (!badge) return; // Exit if metafield disabled
+  const promo = document.getElementById("promo-badge-f80");
+  if (!promo) return; // Exit if metafield disabled
 
   // Price block container
   const priceBlockItem = document.querySelector(
@@ -24,20 +24,21 @@ document.addEventListener("DOMContentLoaded", function () {
     '.product-info__block-item[data-block-id="price"] .product-info__price'
   );
 
-  // Move badge under price
+  // Move promo badge under price
   if (priceInner) {
-    priceInner.insertAdjacentElement("afterend", badge);
+    priceInner.insertAdjacentElement("afterend", promo);
   }
 
-  // Add class to price block
+  // Add class if needed
   if (priceBlockItem) {
-    priceBlockItem.classList.add("withfreeshipping_badge");
+    priceBlockItem.classList.add("withpromo_badge");
   }
 });
 </script>
 
+
 <style type="text/css">
-.product-info__block-item .custom-free-shipping{
+.product-info__block-item .promo-badge-item{
 
   background:rgb(157 34 39);
   display: inline-block;
@@ -51,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
 }
 
 	
-.product-info__block-item.withfreeshipping_badge {
+.product-info__block-item.withpromo_badge {
 display: flex !important;
     align-items: center;
 	gap: 10px;}
